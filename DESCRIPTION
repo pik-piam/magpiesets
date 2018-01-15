@@ -1,0 +1,15 @@
+Package: magpiesets
+Type: Package
+Title: MAgPIE sets for R
+Version: 0.29.1
+Date: 2018-01-09
+Author: Florian Humpenoeder, Benjamin Leon Bodirsky
+Maintainer: Florian Humpenoeder <humpenoeder@pik-potsdam.de>
+Description: A library containing MAgPIE sets and other support functions.
+Depends:
+    base,
+    magclass
+License: LGPL-3 | file LICENSE
+LazyLoad: yes
+LazyData: yes
+RoxygenNote: 6.0.1
