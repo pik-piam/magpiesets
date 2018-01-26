@@ -100,7 +100,7 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
   out<-rename_it(report=out,set="kli",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kli"]))
   out<-rename_it(report=out,set="fish",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["fish"]))
   
-  out<-rename_it(report=out,set="kforest",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kforest"]))
+  out<-rename_it(report=out,set="kforest",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kforest"]))
   
   
   if(sort) out <- out[,,sort(getNames(out))]
