@@ -26,8 +26,8 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
   dim2=as.numeric(substring(dim,3))
   
   #Set partly values
-  set_partly <- logical(13) 
-  set_names  <- c("kall", "crops_excluding_bioenergy_and_forage", "cereals", "oilcrops", "sugarcrops", "other_crops", "bioenergycrops", "foddr", "pasture", "ksd", "kres", "kli", "fish")
+  set_partly <- logical(14) 
+  set_names  <- c("kall", "crops_excluding_bioenergy_and_forage", "cereals", "oilcrops", "sugarcrops", "other_crops", "bioenergycrops", "foddr", "pasture", "ksd", "kres", "kli", "fish","kforest")
   names(set_partly)  <- set_names
   
   if(!is.logical(partly)){
@@ -99,6 +99,9 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
   
   out<-rename_it(report=out,set="kli",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kli"]))
   out<-rename_it(report=out,set="fish",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["fish"]))
+  
+  out<-rename_it(report=out,set="kforest",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kforest"]))
+  
   
   if(sort) out <- out[,,sort(getNames(out))]
   

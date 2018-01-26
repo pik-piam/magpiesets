@@ -1,8 +1,8 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.29.1
-Date: 2018-01-09
+Version: 0.30.0
+Date: 2018-01-26
 Author: Florian Humpenoeder, Benjamin Leon Bodirsky
 Maintainer: Florian Humpenoeder <humpenoeder@pik-potsdam.de>
 Description: A library containing MAgPIE sets and other support functions.
