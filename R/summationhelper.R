@@ -10,9 +10,29 @@
 #' @param dim Dimension in which the modification, should take place
 #' @param check Switch to turn off checking routine, if FALSE. Default is TRUE.
 #' @return MAgPIE object
+#' 
+#' @details summationhelper should help to organize the subcategories into groups for e.g. stackplots. Notice the following hints:
+#' \itemize{
+#'   \item Every name should just contain one summation symbol (mostly '+').
+#'   \item The position of the symbol (counted in '|' from left side) will determine the level.
+#'   \item Every subitem containing the same summation symbol in the same level with the same supercategory name will be summed.
+#'   \item Items without any summation symbol will ge ignored.
+#'   \item Items with different summation symbols will be summed up separately.
+#'   \item In most of the cases a summation symbol will be just placed before the last level (counted in '|' from left side).
+#'   \item It is helpful to think about which group of items should be stacked in a stackplot.
+#' }
+#'   An example how a summation symbol placement could look like: 
+#'   \preformatted{  Toplevel  
+#'   Toplevel|+|Item 1
+#'   Toplevel|+|Item 2
+#'   Toplevel|Item 2|+|Subitem 1
+#'   Toplevel|Item 2|+|Subitem 1
+#'   Toplevel|++|Item A
+#'   Toplevel|++|Item B
+#'   Toplevel|Item ?}
+#' 
 #' @author Abhijeet Mishra, Kristine Karstens
 #' @examples
-#' 
 #'   \dontrun{
 #'     x <- calcOutput("LanduseInitialisation",aggregate = FALSE)
 #'     getNames(x) <- paste0("Land Cover|", reportingnames(getNames(x))," (million ha)")   
