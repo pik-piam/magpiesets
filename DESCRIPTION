@@ -1,8 +1,8 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.33.1
-Date: 2018-04-27
+Version: 0.33.2
+Date: 2018-06-19
 Authors@R: c(person("Florian", "Humpenoeder", email = "humpenoeder@pik-potsdam.de", role = c("aut","cre")),
              person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = "aut"))
 Author: Florian Humpenoeder, Benjamin Leon Bodirsky
@@ -17,4 +17,4 @@ License: LGPL-3 | file LICENSE
 LazyLoad: yes
 LazyData: yes
 RoxygenNote: 6.0.1
-ValidationKey: 5841488
+ValidationKey: 5876732
