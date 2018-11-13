@@ -1,10 +1,12 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.33.3
-Date: 2018-06-19
+Version: 0.33.4
+Date: 2018-11-13
 Authors@R: c(person("Florian", "Humpenoeder", email = "humpenoeder@pik-potsdam.de", role = c("aut","cre")),
-             person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = "aut"))
+             person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = "aut"),
+			 person("Abhijeet", "Mishra", email = "mishra@pik-potsdam.de", role = "aut"),
+			 person("Kristine", "Karstens", email = "karstens@pik-potsdam.de", role = "aut"))
 Author: Florian Humpenoeder, Benjamin Leon Bodirsky
 Maintainer: Florian Humpenoeder <humpenoeder@pik-potsdam.de>
 Description: A library containing MAgPIE sets and other support functions.
@@ -16,5 +18,5 @@ BugReports: https://github.com/pik-piam/magpiesets/issues
 License: LGPL-3 | file LICENSE
 LazyLoad: yes
 LazyData: yes
-RoxygenNote: 6.0.1
-ValidationKey: 5894433
+RoxygenNote: 6.1.0
+ValidationKey: 5961232
