@@ -1,0 +1,128 @@
+---
+title: "Set handling with MAgPIEsets"
+author: "Kristine Karstens"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Working with magpiesets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+The MAgPIEsets package contains helper functions for reporting and validation of the [MAgPIE](https://github.com/magpiemodel/magpie) model, especially for the preprocessing library *moinput* (see `vignette("moinput")`) and the postprocessing library *magpie4* (on [github](https://github.com/pik-piam/magpie4)).
+Since sets evolve over time, the sets are upwards compatible with previous versions.
+
+## Objective
+This help will provide some general information about the set management and versioning. It will contain as well help to extend sets or create new items.
+
+### The magpiesets table
+The magpiesets package is centered around a *magpiesets table* coming with the package. You can view the table via:
+
+```{r table-sets, eval = FALSE}
+View(read.csv(system.file("extdata", "magpiesets.csv", package = "magpiesets")))
+```
+
+The table contains in its rows items about 
+
+* commodities, 
+* time steps, 
+* processing techniques,
+* animal waste management systems
+* greenhouse gases,
+* landuse types,
+* sets of commodities and
+* product attributes.
+
+These items are allocated to a specific sets by containing the set name within the column of the set.
+
+#### Example:
+
+|                            |human             |female            |male              |
+|:---------------------------|:-----------------|:-----------------|:-----------------|
+|Alice                       |human             |female            |                  |
+|Bob                         |human             |                  |male              |
+
+Since items and set names are often sparse, more detailed names can be found within the *reportingnames table* also coming with the package:
+
+```{r table-names, eval = FALSE}
+View(read.csv(system.file("extdata", "reportingnames.csv", package = "magpiesets")))
+```
+
+#### Calling a set
+
+Use the `findset` function (help `?findset`) to call set items of a MAgPIE set:
+```{r findset1, eval = FALSE}
+findset("kall")
+```
+
+### Using set versions
+
+Since sets evolve over time, the sets have to be upwards compatible with previous versions.
+Therefore the *magpiesets table* contains at the last columns (starting with `default_sep18`) so called *version sets*.
+
+At the moment the following *version sets* are available:
+
+|||
+|:---------------|:------------------------------------------------------------------|
+| default_sep18:| default MAgPIE 4.0 set with 49 products in 'kall'                  |
+| biogas_dec18: | biogas extension including biogas and manure in 'kall'             |
+| biochar_jan19 | biochar extension including biochar and pyrolyzing                 |
+
+Please have a look into the *magpiesets table* for more detailed information about item affiliations.
+
+#### Calling a set of a specific version
+
+The `findset` function (help `?findset`) contains the parameter `version`, where you can specify the wanted version:
+
+```{r findset2, eval = FALSE}
+findset("kall", version="biogas_dec18")
+```
+
+### Expanding the set space
+
+It is possible to extend the *magpiesets table* with both new items and new sets. 
+
+Please note:
+
+* While you have to introduce a new *version set* for new items (new rows in the *magpiesets table*), is it not necessary to do that for new sets (new columns in the *magpiesets table*). 
+* Both items and sets have to be added to the *reportingnames table* to provide a meaningful translation.
+
+#### Examples
+
+**Introducing a new item (here *Carol*)**
+
+|                      |human             |female            |male              |default_jul69     |*thirdgender_jan19* |
+|:---------------------|:-----------------|:-----------------|:-----------------|:-----------------|:-------------------|
+|Alice                 |human             |female            |                  |default_jul69     |*thirdgender_jan19* |
+|Bob                   |human             |                  |male              |default_jul69     |*thirdgender_jan19* |
+|*Carol*               |*human*           |                  |                  |                  |*thirdgender_jan19* |
+
+Here the new item is added as a row as well as all its affiliations to know sets. Also a new *version set* has to be introduced.
+
+**Introducing a new set (here *diverse*)**
+
+|                         |human       |female      |male        |*diverse*   |default_jul69     |thirdgender_jan19 |
+|:------------------------|:-----------|:-----------|:-----------|:-----------|:-----------------|:-----------------|
+|Alice                    |human       |female      |            |            |default_jul69     |thirdgender_jan19 |
+|Bob                      |human       |            |male        |            |default_jul69     |thirdgender_jan19 |
+|Carol                    |human       |            |            |*diverse*   |                  |thirdgender_jan19 |
+
+Here the set just has to be added as a column before the *version sets* at the end of the table.
+
+### More information
+
+The magpiesets package also contains more functionallity not (or minor) touch by the set versioning.
+See also:
+
+* `?reportingnames`
+* `?reportingReverse`
+* `?reporthelper`
+* `?summationhelper` 

@@ -1,198 +1,202 @@
-"magpienames","reportingnames","reportingcolors"
-"alcohol","Alcoholic beverages","#b4c6f0"
-"begr","Short rotation grasses","#5f7319"
-"betr","Short rotation trees","#734919"
-"brans","Brans","#d8bc8e"
-"cassav_sp","Tropical roots","#92643a"
-"cottn_pro","Cotton seed","#f2f6ff"
-"distillers_grain","Distillers grains","#d9c835"
-"ethanol","Ethanol","#ed2df0"
-"fibres","Cotton lint","#e2dfe3"
-"fish","Fish","#aac3f7"
-"foddr","Forage","#399700"
-"groundnut","Groundnuts","#ecc774"
-"livst_chick","Poultry meat","#ffddc9"
-"livst_egg","Eggs","#e7d8cf"
-"livst_milk","Dairy","#fafaed"
-"livst_pig","Monogastric meat","#ffa396"
-"livst_rum","Ruminant meat","#ec472f"
-"maiz","Maize","#ffc300"
-"molasses","Molasses","#521e00"
-"oils","Oils","#fff3a9"
-"oilcakes","Oilcakes","#d5be66"
-"oilpalm","Oilpalms","#3b8429"
-"others","Fruits Vegetables Nuts","#9fd134"
-"pasture","Pasture","#cdff61"
-"potato","Potatoes","#b66913"
-"puls_pro","Pulses","#b56800"
-"rapeseed","Other oil crops (incl rapeseed)","#eaff3b"
-"res_cereals","Straw","#dfff00"
-"res_fibrous","Other fibrous crop residues","#d0ee00"
-"res_nonfibrous","Non fibrous crop residues","#c2de00"
-"res_nouse","Residues with no double use",
-"rice_pro","Rice","#ead78d"
-"scp","Microbial protein","#5ae3d0"
-"soybean","Soybean","#f8efb8"
-"sugar","Sugar","#f8f8f8"
-"sugr_beet","Sugar beet","#e0e0e0"
-"sugr_cane","Sugar cane","#eeffd1"
-"sunflower","Sunflower","#eae300"
-"tece","Temperate cereals","#ffe733"
-"trce","Tropical cereals","#f6e778"
-"wood","Industrial roundwood","#7b5a39"
-"woodfuel","Wood fuel","#b3b300"
-"kall","All products",
-"kcr","Crop products",
-"kli","Livestock products","#ffa396"
-"kpr","Primary products",
-"ksd","Secondary products","#9700ff"
-"kst","Staples products",
-"kap","Animal products including Fish","#ec472f"
-"knf","Non edible products","#ed2df0"
-"kres","Crop residues","#dfff00"
-"kforest","Forest products",
-"k_trade","Traded products",
-"k_notrade","Non traded products",
-"milling","Milling",
-"refining","Refining",
-"extracting","Extracting",
-"distilling","Distiilling",
-"fermentation","Fermentation",
-"breeding","Breeding",
-"ginning","Ginning",
-"cereals","Cereals","#ffe733"
-"oilcrops","Oil crops","#f8efb8"
-"sugarcrops","Sugar crops","#eeffd1"
-"bioenergycrops","Bioenergy crops","#5f7319"
-"other_crops","Other crops","#b66913"
-"crops_excluding_bioenergy_and_forage","Crops","#ffe733"
-"crop","Cropland","#ffe733"
-"past","Pastures and Rangelands","#cdff61"
-"forest","Forest",
-"forestry","Managed Forest",
-"natrforest","Natural Forest",
-"primforest","Primary Forest",
-"secdforest","Secondary Forest",
-"urban","Urban Area",
-"other","Other Land",
-"transboundary","Transboundary or Oceans",
-"production","Production",
-"domestic_supply","Domestic Supply",
-"food","Food",
-"feed","Feed",
-"seed","Seed",
-"waste","Agricultural Supply Chain Loss",
-"other_util","Material",
-"bioenergy","Bioenergy",
-"processed","Processing",
-"dom_balanceflow","Domestic Balanceflow",
-"harvest","Harvested Crops",
-"ag","Aboveground Crop Residues",
-"bg","Belowground Crop Residues",
-"fixation_crops","Biological Fixation Symbiotic Crops",
-"fixation_freeliving","Biological Fixation Freeliving Microorganisms",
-"manure","Manure Recycled from Confinements",
-"manure_stubble_grazing","Manure From Stubble Grazing",
-"ag_recycling","Recycled Aboveground Crop Residues",
-"bg_recycling","Recycled Belowground Crop Residues",
-"ag_ash","Ash from Burned Crop Residues",
-"deposition","Atmospheric Deposition",
-"som","Soil Organic Matter Loss",
-"fertilizer","Fertilizer",
-"balanceflow","Balanceflow",
-"surplus","Nutrient Surplus",
-"grazing","Manure From Grazing",
-"fuel","Manure Collected As Fuel",
-"stubble_grazing","Manure From Stubble Grazing",
-"confinement","Manure In Confinements",
-"bc","BC",
-"ch4","CH4",
-"co","CO",
-"co2","CO2",
-"co2_c","CO2-C",
-"n2o","N2O",
-"n2o_n","N2O-N",
-"nh3","NH3",
-"nh3_n","NH3-N",
-"nmhc","NMHC",
-"no2_n","NO2-N",
-"no3","NO3-",
-"no3_n","NO3-N",
-"no2","NO2",
-"oc","OC",
-"so2","SO2",
-"n2_n","N2-N",
-"n2o_n_direct","direct N2O-N emissions",
-"n2o_n_indirect","indirect N2O-N emissions from leaching and volatilisation",
-"balanceflow_n","nitrogen accounting mismatch",
-"agricultural_magpie","Endogenous estimated deposition",
-"other_exogenous","Exogenous prescribed path",
-"industry","Industry",
-"transport","Transport",
-"luc","Landuse Change and Biomass Combustion",
-"waste_management","Waste disposal",
-"sewage","Sewage",
-"cropland_soils","Cropland soil emissions",
-"pasture_soils","Pasture soil emissions",
-"nonag_soils","Non-agricultural soil emissions",
-"awms","Animal waste management",
-"indirect_anthropogenic_deposition_oceans","Indirect emissions from atmospheric deposition on oceans",
-"indirect_leaching","Indirect emissions from leaching",
-"indirect_leaching","Indirect emissions from leaching",
-"groundwater","Groundwater",
-"riparian","Riparian Zones",
-"oceans","Oceans",
-"lightning","Lightning",
-"indirect_leaching","Indirect emissions from leaching",
-"feed_fish","Feed for Aquaculture",
-"feed_livst_chick","Feed for Poultry meat",
-"feed_livst_egg","Feed for Eggs",
-"feed_livst_milk","Feed for Dairy",
-"feed_livst_pig","Feed for Monogastric meat",
-"feed_livst_rum","Feed for Ruminant meat",
-"inorg_fert","Inorganic fertilizers",
-"man_crop","Manure applied to croplands",
-"resid","Crop residues recycled to croplands",
-"rice","Rice cultivation",
-"cropland_soils_denitrification","Other cropland soil emissions",
-"dm","Dry Matter",
-"nr","Nitrogen",
-"p","Phosphorus",
-"k","Potash",
-"ge","Gross Energy",
-"wm","Wet Matter",
-"c","Carbon",
-"feces","Human Feces",
-"urine","Human Urine",
-"hh_food_waste","Household Food Waste",
-"slaughterwaste","Slaughter Waste",
-"excretion","Manure",
-"food_processing_loss","Food Processing Loss",
-"food_availability","Household Food Availability",
-"fooduse","Food Processing and Marketing",
-"processing_loss","Processing Loss",
-"accumulation","Accumulation",
-"untreated","Untreated Wastewater",
-"removed","Nutrients removed in Wastewater Treatment",
-"freshwater","Inland freshwater bodies",
-"riverdischarge","River discharge",
-"fixation_ocean","Nitrogen fixation in oceans",
-"chemical_industry","Chemical Industry",
-"agriculture","Agriculture",
-"lagoon","Anaerobic lagoon",
-"daily_spread","Daily spread",
-"digester","Anaerobic digester",
-"drylot","Dry lot",
-"liquid_slurry","Liquid slurry",
-"other_awms","Other animal waste management",
-"pasture_range_paddock","Pasture range and paddock",
-"pit_long","Pit storage less than a month",
-"pit_short","Pit storage longer than a month",
-"solid_storage","Solid storage",
-"rainfed","Rainfed",
-"irrigated","Irrigated",
-"biomass","Biomass",
-"removal","Removed from fields",
-"burned","Burned on fields and oxidized",
-"ash","Burned on fields and remains as ash",
-"recycle","Left on fields",
++ACI-magpienames+ACI-,+ACI-reportingnames+ACI-,+ACI-reportingcolors+ACI-
++ACI-alcohol+ACI-,+ACI-Alcoholic beverages+ACI-,+ACI-+ACM-b4c6f0+ACI-
++ACI-begr+ACI-,+ACI-Short rotation grasses+ACI-,+ACI-+ACM-5f7319+ACI-
++ACI-betr+ACI-,+ACI-Short rotation trees+ACI-,+ACI-+ACM-734919+ACI-
++ACI-biochar+ACI-,+ACI-Biochar+ACI-,
++ACI-biogas+ACI-,+ACI-Biogas+ACI-,
++ACI-brans+ACI-,+ACI-Brans+ACI-,+ACI-+ACM-d8bc8e+ACI-
++ACI-cassav+AF8-sp+ACI-,+ACI-Tropical roots+ACI-,+ACI-+ACM-92643a+ACI-
++ACI-cottn+AF8-pro+ACI-,+ACI-Cotton seed+ACI-,+ACI-+ACM-f2f6ff+ACI-
++ACI-distillers+AF8-grain+ACI-,+ACI-Distillers grains+ACI-,+ACI-+ACM-d9c835+ACI-
++ACI-ethanol+ACI-,+ACI-Ethanol+ACI-,+ACI-+ACM-ed2df0+ACI-
++ACI-fibres+ACI-,+ACI-Cotton lint+ACI-,+ACI-+ACM-e2dfe3+ACI-
++ACI-fish+ACI-,+ACI-Fish+ACI-,+ACI-+ACM-aac3f7+ACI-
++ACI-foddr+ACI-,+ACI-Forage+ACI-,+ACI-+ACM-399700+ACI-
++ACI-groundnut+ACI-,+ACI-Groundnuts+ACI-,+ACI-+ACM-ecc774+ACI-
++ACI-livst+AF8-chick+ACI-,+ACI-Poultry meat+ACI-,+ACI-+ACM-ffddc9+ACI-
++ACI-livst+AF8-egg+ACI-,+ACI-Eggs+ACI-,+ACI-+ACM-e7d8cf+ACI-
++ACI-livst+AF8-milk+ACI-,+ACI-Dairy+ACI-,+ACI-+ACM-fafaed+ACI-
++ACI-livst+AF8-pig+ACI-,+ACI-Monogastric meat+ACI-,+ACI-+ACM-ffa396+ACI-
++ACI-livst+AF8-rum+ACI-,+ACI-Ruminant meat+ACI-,+ACI-+ACM-ec472f+ACI-
++ACI-maiz+ACI-,+ACI-Maize+ACI-,+ACI-+ACM-ffc300+ACI-
++ACI-manure+ACI-,+ACI-Manure+ACI-,
++ACI-molasses+ACI-,+ACI-Molasses+ACI-,+ACI-+ACM-521e00+ACI-
++ACI-oils+ACI-,+ACI-Oils+ACI-,+ACI-+ACM-fff3a9+ACI-
++ACI-oilcakes+ACI-,+ACI-Oilcakes+ACI-,+ACI-+ACM-d5be66+ACI-
++ACI-oilpalm+ACI-,+ACI-Oilpalms+ACI-,+ACI-+ACM-3b8429+ACI-
++ACI-others+ACI-,+ACI-Fruits Vegetables Nuts+ACI-,+ACI-+ACM-9fd134+ACI-
++ACI-pasture+ACI-,+ACI-Pasture+ACI-,+ACI-+ACM-cdff61+ACI-
++ACI-potato+ACI-,+ACI-Potatoes+ACI-,+ACI-+ACM-b66913+ACI-
++ACI-puls+AF8-pro+ACI-,+ACI-Pulses+ACI-,+ACI-+ACM-b56800+ACI-
++ACI-rapeseed+ACI-,+ACI-Other oil crops (incl rapeseed)+ACI-,+ACI-+ACM-eaff3b+ACI-
++ACI-res+AF8-cereals+ACI-,+ACI-Straw+ACI-,+ACI-+ACM-dfff00+ACI-
++ACI-res+AF8-fibrous+ACI-,+ACI-Other fibrous crop residues+ACI-,+ACI-+ACM-d0ee00+ACI-
++ACI-res+AF8-nonfibrous+ACI-,+ACI-Non fibrous crop residues+ACI-,+ACI-+ACM-c2de00+ACI-
++ACI-res+AF8-nouse+ACI-,+ACI-Residues with no double use+ACI-,
++ACI-rice+AF8-pro+ACI-,+ACI-Rice+ACI-,+ACI-+ACM-ead78d+ACI-
++ACI-scp+ACI-,+ACI-Microbial protein+ACI-,+ACI-+ACM-5ae3d0+ACI-
++ACI-soybean+ACI-,+ACI-Soybean+ACI-,+ACI-+ACM-f8efb8+ACI-
++ACI-sugar+ACI-,+ACI-Sugar+ACI-,+ACI-+ACM-f8f8f8+ACI-
++ACI-sugr+AF8-beet+ACI-,+ACI-Sugar beet+ACI-,+ACI-+ACM-e0e0e0+ACI-
++ACI-sugr+AF8-cane+ACI-,+ACI-Sugar cane+ACI-,+ACI-+ACM-eeffd1+ACI-
++ACI-sunflower+ACI-,+ACI-Sunflower+ACI-,+ACI-+ACM-eae300+ACI-
++ACI-tece+ACI-,+ACI-Temperate cereals+ACI-,+ACI-+ACM-ffe733+ACI-
++ACI-trce+ACI-,+ACI-Tropical cereals+ACI-,+ACI-+ACM-f6e778+ACI-
++ACI-wood+ACI-,+ACI-Industrial roundwood+ACI-,+ACI-+ACM-7b5a39+ACI-
++ACI-woodfuel+ACI-,+ACI-Wood fuel+ACI-,+ACI-+ACM-b3b300+ACI-
++ACI-kall+ACI-,+ACI-All products+ACI-,
++ACI-kcr+ACI-,+ACI-Crop products+ACI-,
++ACI-kli+ACI-,+ACI-Livestock products+ACI-,+ACI-+ACM-ffa396+ACI-
++ACI-kpr+ACI-,+ACI-Primary products+ACI-,
++ACI-ksd+ACI-,+ACI-Secondary products+ACI-,+ACI-+ACM-9700ff+ACI-
++ACI-kst+ACI-,+ACI-Staples products+ACI-,
++ACI-kap+ACI-,+ACI-Animal products including Fish+ACI-,+ACI-+ACM-ec472f+ACI-
++ACI-knf+ACI-,+ACI-Non edible products+ACI-,+ACI-+ACM-ed2df0+ACI-
++ACI-kres+ACI-,+ACI-Crop residues+ACI-,+ACI-+ACM-dfff00+ACI-
++ACI-kforest+ACI-,+ACI-Forest products+ACI-,
++ACI-k+AF8-trade+ACI-,+ACI-Traded products+ACI-,
++ACI-k+AF8-notrade+ACI-,+ACI-Non traded products+ACI-,
++ACI-milling+ACI-,+ACI-Milling+ACI-,
++ACI-refining+ACI-,+ACI-Refining+ACI-,
++ACI-extracting+ACI-,+ACI-Extracting+ACI-,
++ACI-distilling+ACI-,+ACI-Distiilling+ACI-,
++ACI-fermentation+ACI-,+ACI-Fermentation+ACI-,
++ACI-breeding+ACI-,+ACI-Breeding+ACI-,
++ACI-ginning+ACI-,+ACI-Ginning+ACI-,
++ACI-pyrolyzing+ACI-,+ACI-Pyrolyzing+ACI-,
++ACI-cereals+ACI-,+ACI-Cereals+ACI-,+ACI-+ACM-ffe733+ACI-
++ACI-oilcrops+ACI-,+ACI-Oil crops+ACI-,+ACI-+ACM-f8efb8+ACI-
++ACI-sugarcrops+ACI-,+ACI-Sugar crops+ACI-,+ACI-+ACM-eeffd1+ACI-
++ACI-bioenergycrops+ACI-,+ACI-Bioenergy crops+ACI-,+ACI-+ACM-5f7319+ACI-
++ACI-other+AF8-crops+ACI-,+ACI-Other crops+ACI-,+ACI-+ACM-b66913+ACI-
++ACI-crops+AF8-excluding+AF8-bioenergy+AF8-and+AF8-forage+ACI-,+ACI-Crops+ACI-,+ACI-+ACM-ffe733+ACI-
++ACI-crop+ACI-,+ACI-Cropland+ACI-,+ACI-+ACM-ffe733+ACI-
++ACI-past+ACI-,+ACI-Pastures and Rangelands+ACI-,+ACI-+ACM-cdff61+ACI-
++ACI-forest+ACI-,+ACI-Forest+ACI-,
++ACI-forestry+ACI-,+ACI-Managed Forest+ACI-,
++ACI-natrforest+ACI-,+ACI-Natural Forest+ACI-,
++ACI-primforest+ACI-,+ACI-Primary Forest+ACI-,
++ACI-secdforest+ACI-,+ACI-Secondary Forest+ACI-,
++ACI-urban+ACI-,+ACI-Urban Area+ACI-,
++ACI-other+ACI-,+ACI-Other Land+ACI-,
++ACI-transboundary+ACI-,+ACI-Transboundary or Oceans+ACI-,
++ACI-production+ACI-,+ACI-Production+ACI-,
++ACI-domestic+AF8-supply+ACI-,+ACI-Domestic Supply+ACI-,
++ACI-food+ACI-,+ACI-Food+ACI-,
++ACI-feed+ACI-,+ACI-Feed+ACI-,
++ACI-seed+ACI-,+ACI-Seed+ACI-,
++ACI-waste+ACI-,+ACI-Agricultural Supply Chain Loss+ACI-,
++ACI-other+AF8-util+ACI-,+ACI-Material+ACI-,
++ACI-bioenergy+ACI-,+ACI-Bioenergy+ACI-,
++ACI-processed+ACI-,+ACI-Processing+ACI-,
++ACI-dom+AF8-balanceflow+ACI-,+ACI-Domestic Balanceflow+ACI-,
++ACI-harvest+ACI-,+ACI-Harvested Crops+ACI-,
++ACI-ag+ACI-,+ACI-Aboveground Crop Residues+ACI-,
++ACI-bg+ACI-,+ACI-Belowground Crop Residues+ACI-,
++ACI-fixation+AF8-crops+ACI-,+ACI-Biological Fixation Symbiotic Crops+ACI-,
++ACI-fixation+AF8-freeliving+ACI-,+ACI-Biological Fixation Freeliving Microorganisms+ACI-,
++ACI-manure+ACI-,+ACI-Manure Recycled from Confinements+ACI-,
++ACI-manure+AF8-stubble+AF8-grazing+ACI-,+ACI-Manure From Stubble Grazing+ACI-,
++ACI-ag+AF8-recycling+ACI-,+ACI-Recycled Aboveground Crop Residues+ACI-,
++ACI-bg+AF8-recycling+ACI-,+ACI-Recycled Belowground Crop Residues+ACI-,
++ACI-ag+AF8-ash+ACI-,+ACI-Ash from Burned Crop Residues+ACI-,
++ACI-deposition+ACI-,+ACI-Atmospheric Deposition+ACI-,
++ACI-som+ACI-,+ACI-Soil Organic Matter Loss+ACI-,
++ACI-fertilizer+ACI-,+ACI-Fertilizer+ACI-,
++ACI-balanceflow+ACI-,+ACI-Balanceflow+ACI-,
++ACI-surplus+ACI-,+ACI-Nutrient Surplus+ACI-,
++ACI-grazing+ACI-,+ACI-Manure From Grazing+ACI-,
++ACI-fuel+ACI-,+ACI-Manure Collected As Fuel+ACI-,
++ACI-stubble+AF8-grazing+ACI-,+ACI-Manure From Stubble Grazing+ACI-,
++ACI-confinement+ACI-,+ACI-Manure In Confinements+ACI-,
++ACI-bc+ACI-,+ACI-BC+ACI-,
++ACI-ch4+ACI-,+ACI-CH4+ACI-,
++ACI-co+ACI-,+ACI-CO+ACI-,
++ACI-co2+ACI-,+ACI-CO2+ACI-,
++ACI-co2+AF8-c+ACI-,+ACI-CO2+AC0-C+ACI-,
++ACI-n2o+ACI-,+ACI-N2O+ACI-,
++ACI-n2o+AF8-n+ACI-,+ACI-N2O+AC0-N+ACI-,
++ACI-nh3+ACI-,+ACI-NH3+ACI-,
++ACI-nh3+AF8-n+ACI-,+ACI-NH3+AC0-N+ACI-,
++ACI-nmhc+ACI-,+ACI-NMHC+ACI-,
++ACI-no2+AF8-n+ACI-,+ACI-NO2+AC0-N+ACI-,
++ACI-no3+ACI-,+ACI-NO3+AC0-+ACI-,
++ACI-no3+AF8-n+ACI-,+ACI-NO3+AC0-N+ACI-,
++ACI-no2+ACI-,+ACI-NO2+ACI-,
++ACI-oc+ACI-,+ACI-OC+ACI-,
++ACI-so2+ACI-,+ACI-SO2+ACI-,
++ACI-n2+AF8-n+ACI-,+ACI-N2+AC0-N+ACI-,
++ACI-n2o+AF8-n+AF8-direct+ACI-,+ACI-direct N2O+AC0-N emissions+ACI-,
++ACI-n2o+AF8-n+AF8-indirect+ACI-,+ACI-indirect N2O+AC0-N emissions from leaching and volatilisation+ACI-,
++ACI-balanceflow+AF8-n+ACI-,+ACI-nitrogen accounting mismatch+ACI-,
++ACI-agricultural+AF8-magpie+ACI-,+ACI-Endogenous estimated deposition+ACI-,
++ACI-other+AF8-exogenous+ACI-,+ACI-Exogenous prescribed path+ACI-,
++ACI-industry+ACI-,+ACI-Industry+ACI-,
++ACI-transport+ACI-,+ACI-Transport+ACI-,
++ACI-luc+ACI-,+ACI-Landuse Change and Biomass Combustion+ACI-,
++ACI-waste+AF8-management+ACI-,+ACI-Waste disposal+ACI-,
++ACI-sewage+ACI-,+ACI-Sewage+ACI-,
++ACI-cropland+AF8-soils+ACI-,+ACI-Cropland soil emissions+ACI-,
++ACI-pasture+AF8-soils+ACI-,+ACI-Pasture soil emissions+ACI-,
++ACI-nonag+AF8-soils+ACI-,+ACI-Non+AC0-agricultural soil emissions+ACI-,
++ACI-awms+ACI-,+ACI-Animal waste management+ACI-,
++ACI-indirect+AF8-anthropogenic+AF8-deposition+AF8-oceans+ACI-,+ACI-Indirect emissions from atmospheric deposition on oceans+ACI-,
++ACI-indirect+AF8-leaching+ACI-,+ACI-Indirect emissions from leaching+ACI-,
++ACI-indirect+AF8-leaching+ACI-,+ACI-Indirect emissions from leaching+ACI-,
++ACI-groundwater+ACI-,+ACI-Groundwater+ACI-,
++ACI-riparian+ACI-,+ACI-Riparian Zones+ACI-,
++ACI-oceans+ACI-,+ACI-Oceans+ACI-,
++ACI-lightning+ACI-,+ACI-Lightning+ACI-,
++ACI-indirect+AF8-leaching+ACI-,+ACI-Indirect emissions from leaching+ACI-,
++ACI-feed+AF8-fish+ACI-,+ACI-Feed for Aquaculture+ACI-,
++ACI-feed+AF8-livst+AF8-chick+ACI-,+ACI-Feed for Poultry meat+ACI-,
++ACI-feed+AF8-livst+AF8-egg+ACI-,+ACI-Feed for Eggs+ACI-,
++ACI-feed+AF8-livst+AF8-milk+ACI-,+ACI-Feed for Dairy+ACI-,
++ACI-feed+AF8-livst+AF8-pig+ACI-,+ACI-Feed for Monogastric meat+ACI-,
++ACI-feed+AF8-livst+AF8-rum+ACI-,+ACI-Feed for Ruminant meat+ACI-,
++ACI-inorg+AF8-fert+ACI-,+ACI-Inorganic fertilizers+ACI-,
++ACI-man+AF8-crop+ACI-,+ACI-Manure applied to croplands+ACI-,
++ACI-resid+ACI-,+ACI-Crop residues recycled to croplands+ACI-,
++ACI-rice+ACI-,+ACI-Rice cultivation+ACI-,
++ACI-cropland+AF8-soils+AF8-denitrification+ACI-,+ACI-Other cropland soil emissions+ACI-,
++ACI-dm+ACI-,+ACI-Dry Matter+ACI-,
++ACI-nr+ACI-,+ACI-Nitrogen+ACI-,
++ACI-p+ACI-,+ACI-Phosphorus+ACI-,
++ACI-k+ACI-,+ACI-Potash+ACI-,
++ACI-ge+ACI-,+ACI-Gross Energy+ACI-,
++ACI-wm+ACI-,+ACI-Wet Matter+ACI-,
++ACI-c+ACI-,+ACI-Carbon+ACI-,
++ACI-feces+ACI-,+ACI-Human Feces+ACI-,
++ACI-urine+ACI-,+ACI-Human Urine+ACI-,
++ACI-hh+AF8-food+AF8-waste+ACI-,+ACI-Household Food Waste+ACI-,
++ACI-slaughterwaste+ACI-,+ACI-Slaughter Waste+ACI-,
++ACI-excretion+ACI-,+ACI-Manure+ACI-,
++ACI-food+AF8-processing+AF8-loss+ACI-,+ACI-Food Processing Loss+ACI-,
++ACI-food+AF8-availability+ACI-,+ACI-Household Food Availability+ACI-,
++ACI-fooduse+ACI-,+ACI-Food Processing and Marketing+ACI-,
++ACI-processing+AF8-loss+ACI-,+ACI-Processing Loss+ACI-,
++ACI-accumulation+ACI-,+ACI-Accumulation+ACI-,
++ACI-untreated+ACI-,+ACI-Untreated Wastewater+ACI-,
++ACI-removed+ACI-,+ACI-Nutrients removed in Wastewater Treatment+ACI-,
++ACI-freshwater+ACI-,+ACI-Inland freshwater bodies+ACI-,
++ACI-riverdischarge+ACI-,+ACI-River discharge+ACI-,
++ACI-fixation+AF8-ocean+ACI-,+ACI-Nitrogen fixation in oceans+ACI-,
++ACI-chemical+AF8-industry+ACI-,+ACI-Chemical Industry+ACI-,
++ACI-agriculture+ACI-,+ACI-Agriculture+ACI-,
++ACI-lagoon+ACI-,+ACI-Anaerobic lagoon+ACI-,
++ACI-daily+AF8-spread+ACI-,+ACI-Daily spread+ACI-,
++ACI-digester+ACI-,+ACI-Anaerobic digester+ACI-,
++ACI-drylot+ACI-,+ACI-Dry lot+ACI-,
++ACI-liquid+AF8-slurry+ACI-,+ACI-Liquid slurry+ACI-,
++ACI-other+AF8-awms+ACI-,+ACI-Other animal waste management+ACI-,
++ACI-pasture+AF8-range+AF8-paddock+ACI-,+ACI-Pasture range and paddock+ACI-,
++ACI-pit+AF8-long+ACI-,+ACI-Pit storage less than a month+ACI-,
++ACI-pit+AF8-short+ACI-,+ACI-Pit storage longer than a month+ACI-,
++ACI-solid+AF8-storage+ACI-,+ACI-Solid storage+ACI-,
++ACI-rainfed+ACI-,+ACI-Rainfed+ACI-,
++ACI-irrigated+ACI-,+ACI-Irrigated+ACI-,
++ACI-biomass+ACI-,+ACI-Biomass+ACI-,
++ACI-removal+ACI-,+ACI-Removed from fields+ACI-,
++ACI-burned+ACI-,+ACI-Burned on fields and oxidized+ACI-,
++ACI-ash+ACI-,+ACI-Burned on fields and remains as ash+ACI-,
++ACI-recycle+ACI-,+ACI-Left on fields+ACI-,

@@ -11,6 +11,7 @@
 #' @param detail if detail=F, the subcategories of groups are not reported (e.g. "soybean" within "oilcrops")
 #' @param sort sort items in 3rd dimension alphabetically (TRUE or FALSE)
 #' @param partly boolean or set name, that should be reported in detail, even if it is just partly provided within the gdx
+#' @param version Switch between different version of the magpiesets library
 #' @return MAgPIE object with aggregated and renamed items in 3rd dimension
 #' @author Benjamin Leon Bodirsky, Florian Humpenoeder
 #' @examples
@@ -21,13 +22,13 @@
 #'   }
 #'   
 
-reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, sort=FALSE, partly=FALSE){
+reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, sort=FALSE, partly=FALSE, version="default_sep18"){
   
   dim2=as.numeric(substring(dim,3))
   
   #Set partly values
   set_partly <- logical(14) 
-  set_names  <- c("kall", "crops_excluding_bioenergy_and_forage", "cereals", "oilcrops", "sugarcrops", "other_crops", "bioenergycrops", "foddr", "pasture", "ksd", "kres", "kli", "fish","kforest")
+  set_names  <- findset("report_it")
   names(set_partly)  <- set_names
   
   if(!is.logical(partly)){
@@ -36,7 +37,8 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
     set_partly[]       <- TRUE
   }
   
-  rename_it<-function(report,set,prefix="",groupname=T,subitems=F, partly=FALSE){
+  #Renaming function (including renaming of higher level category names)
+  rename_it <- function(report,set,prefix="",groupname=T,subitems=F, partly=FALSE){
   
     elements <- findset(set,noset = "original")
     
@@ -74,35 +76,30 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
     }
   }
   
+  #Start renaming with set 'kall'
   out<-rename_it(report=NULL,set="kall",subitems = F, prefix=level_zero_name, groupname = F, partly=unname(set_partly["kall"]))
   
-  out<-rename_it(report=out,set="crops_excluding_bioenergy_and_forage",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["crops_excluding_bioenergy_and_forage"]))
-  
+  #Renaming prefix for subsub-categories
   if(level_zero_name==""){
-    prefix<-reportingnames("crops_excluding_bioenergy_and_forage")
-  } else {
-    prefix<-paste0(level_zero_name,"|",reportingnames("crops_excluding_bioenergy_and_forage"))  
+          prefix<-reportingnames("crops_excluding_bioenergy_and_forage")
+        } else {
+          prefix<-paste0(level_zero_name,"|",reportingnames("crops_excluding_bioenergy_and_forage"))  
   }
   
-  out<-rename_it(report=out,set="cereals",subitems = detail, prefix=prefix, groupname = T, partly=unname(set_partly["cereals"]))
-  out<-rename_it(report=out,set="oilcrops",subitems = detail, prefix=prefix, groupname = T, partly=unname(set_partly["oilcrops"]))
-  out<-rename_it(report=out,set="sugarcrops",subitems = detail, prefix=prefix, groupname = T, partly=unname(set_partly["sugarcrops"]))
-  out<-rename_it(report=out,set="other_crops",subitems = detail, prefix=prefix, groupname = T, partly=unname(set_partly["other_crops"]))
-  
-  out<-rename_it(report=out,set="bioenergycrops",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["bioenergycrops"]))
-  out<-rename_it(report=out,set="foddr",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["foddr"]))
-  out<-rename_it(report=out,set="pasture",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["pasture"]))
-  
-  out<-rename_it(report=out,set="ksd",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["ksd"]))
-  
-  out<-rename_it(report=out,set="kres",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kres"]))
-  
-  out<-rename_it(report=out,set="kli",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kli"]))
-  out<-rename_it(report=out,set="fish",subitems = F, prefix=level_zero_name, groupname = T, partly=unname(set_partly["fish"]))
-  
-  out<-rename_it(report=out,set="kforest",subitems = detail, prefix=level_zero_name, groupname = T, partly=unname(set_partly["kforest"]))
-  
-  
+  #Loop over sub- and subsub-categories 
+  for(item in setdiff(set_names,"kall")){
+    
+    if(item%in%c("cereals", "oilcrops", "sugarcrops", "other_crops")){
+      out <- rename_it(report=out, set=item, subitems = detail, prefix=prefix, groupname = TRUE, partly=unname(set_partly[item]))
+   
+    } else if(item%in%c("kli", "ksd", "kres", "kforest")){
+      out <- rename_it(report=out, set=item, subitems = detail,  prefix=level_zero_name, groupname = TRUE, partly=unname(set_partly[item]))
+    
+    } else {
+      out <- rename_it(report=out, set=item, subitems = FALSE,  prefix=level_zero_name, groupname = TRUE, partly=unname(set_partly[item]))
+    }
+  }
+
   if(sort) out <- out[,,sort(getNames(out))]
   
   return(out) 

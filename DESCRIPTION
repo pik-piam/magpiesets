@@ -1,8 +1,8 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.34.0
-Date: 2018-11-15
+Version: 0.35.0
+Date: 2019-01-08
 Authors@R: c(person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = c("aut","cre")),
              person("Florian", "Humpenoeder", email = "humpenoeder@pik-potsdam.de", role = "aut"),
 			 person("Abhijeet", "Mishra", email = "mishra@pik-potsdam.de", role = "aut"),
@@ -18,4 +18,8 @@ Encoding: UTF-8
 LazyLoad: yes
 LazyData: yes
 RoxygenNote: 6.1.1
-ValidationKey: 6069000
+ValidationKey: 6266400
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
