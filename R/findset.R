@@ -14,7 +14,7 @@
 #' @examples
 #'   \dontrun{
 #'     findset("kcr")
-#'   
+#'   }
 
 findset <- function(set, alias=FALSE, noset="warning", version=NULL){
  

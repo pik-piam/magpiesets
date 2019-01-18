@@ -92,7 +92,7 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
     if(item%in%c("cereals", "oilcrops", "sugarcrops", "other_crops")){
       out <- rename_it(report=out, set=item, subitems = detail, prefix=prefix, groupname = TRUE, partly=unname(set_partly[item]))
    
-    } else if(item%in%c("kli", "ksd", "kres", "kforest")){
+    } else if(item%in%c("kli", "ksd", "kres", "kforest","bioenergycrops")){
       out <- rename_it(report=out, set=item, subitems = detail,  prefix=level_zero_name, groupname = TRUE, partly=unname(set_partly[item]))
     
     } else {
