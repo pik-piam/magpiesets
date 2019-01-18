@@ -13,7 +13,7 @@
 #' @param partly boolean or set name, that should be reported in detail, even if it is just partly provided within the gdx
 #' @param version Switch between different version of the magpiesets library
 #' @return MAgPIE object with aggregated and renamed items in 3rd dimension
-#' @author Benjamin Leon Bodirsky, Florian Humpenoeder
+#' @author Benjamin Leon Bodirsky, Florian Humpenoeder, Kristine Karstens
 #' @examples
 #' 
 #'   \dontrun{
@@ -22,13 +22,13 @@
 #'   }
 #'   
 
-reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, sort=FALSE, partly=FALSE, version="default_sep18"){
+reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, sort=FALSE, partly=FALSE, version=NULL){
   
   dim2=as.numeric(substring(dim,3))
   
   #Set partly values
   set_partly <- logical(14) 
-  set_names  <- findset("report_it")
+  set_names  <- findset("report_it", version = version)
   names(set_partly)  <- set_names
   
   if(!is.logical(partly)){
@@ -40,7 +40,7 @@ reporthelper<-function(x,dim=3.1,level_zero_name="All products", detail=TRUE, so
   #Renaming function (including renaming of higher level category names)
   rename_it <- function(report,set,prefix="",groupname=T,subitems=F, partly=FALSE){
   
-    elements <- findset(set,noset = "original")
+    elements <- findset(set,noset = "original", version = version)
     
     #reported set have to match elements of choosen set exactly or partly options has to be choosen  
     if( (all(elements%in%getNames(x,dim=dim2)) & partly==FALSE) |

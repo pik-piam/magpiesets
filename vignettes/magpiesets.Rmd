@@ -80,11 +80,26 @@ Please have a look into the *magpiesets table* for more detailed information abo
 
 #### Calling a set of a specific version
 
-The `findset` function (help `?findset`) contains the parameter `version`, where you can specify the wanted version:
+The `findset` function (help `?findset`) contains the argument `version`, where you can specify the wanted version:
 
 ```{r findset2, eval = FALSE}
 findset("kall", version="biogas_dec18")
 ```
+
+You can also use the option `magpiesets_version` to specify the version set:
+
+```{r findset3a, eval = FALSE}
+options(magpiesets_version = "biogas_dec18")
+```
+
+and than `findset` without the version argument:
+
+```{r findset3b, eval = FALSE}
+findset("kall")
+```
+
+If both option `magpiesets_version` and argument `version` is specified, the argument will be used and a warning is printed.
+
 
 ### Expanding the set space
 
