@@ -62,7 +62,7 @@ summationhelper <- function(x, sep = "+", dim = 3.1, check = TRUE){
     temp <- temp[order(temp$old),] 
     
     # This line of code will identify how many "|" exist in the names (without the wrongly placed "|", e.g. as in "Demand|Feed|")
-    temp$count <- lengths(regmatches(temp$old, gregexpr("(\\|[a-zA-Z])", temp$old)))
+    temp$count <- lengths(regmatches(temp$old, gregexpr("(\\|[a-zA-Z0-9])", temp$old)))
     
     
     # Make the names to be treated as characters (beware that the names are factors at the moment).
