@@ -42,6 +42,7 @@
 "sunflower","Sunflower","#eae300"
 "tece","Temperate cereals","#ffe733"
 "trce","Tropical cereals","#f6e778"
+"timber","Roundwood","#7b5a39"
 "wood","Industrial roundwood","#7b5a39"
 "woodfuel","Wood fuel","#b3b300"
 "kall","All products",
@@ -54,6 +55,7 @@
 "knf","Non edible products","#ed2df0"
 "kres","Crop residues","#dfff00"
 "kforest","Forest products",
+"kforestry","Forest products","#ed2df0"
 "k_trade","Traded products",
 "k_notrade","Non traded products",
 "milling","Milling",
