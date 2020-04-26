@@ -114,6 +114,7 @@
 "bc","BC",
 "ch4","CH4",
 "co","CO",
+"doc","DOC",
 "co2","CO2",
 "co2_c","CO2-C",
 "n2o","N2O",
@@ -202,3 +203,6 @@
 "burned","Burned on fields and oxidized",
 "ash","Burned on fields and remains as ash",
 "recycle","Left on fields",
+"intact","Intact","#006d2c"
+"degrad","Degraded","#a50f15"
+"rewet","Rewetted","#08519c"
