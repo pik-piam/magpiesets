@@ -1,17 +1,22 @@
-# R magpiesets package
+# MAgPIE sets for R
+
+R package **magpiesets**, version **0.38.0**
+
+[![Travis build status](https://travis-ci.com/pik-piam/magpiesets.svg?branch=master)](https://travis-ci.com/pik-piam/magpiesets) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1158588.svg)](https://doi.org/10.5281/zenodo.1158588) 
 
 ## Purpose and Functionality
 
 A library containing MAgPIE sets and other support functions.
 
+
 ## Installation
 
-For installation of the most recent package version an additional repository can be added in R:
+For installation of the most recent package version an additional repository has to be added in R:
 
 ```r
 options(repos = c(CRAN = "@CRAN@", pik = "https://rse.pik-potsdam.de/r/packages"))
 ```
-The additional repository can be made availably permanently by adding the line above to a file called `.Rprofile` stored in the home folder of your system (`Sys.glob("~")` in R returns the home directory).
+The additional repository can be made available permanently by adding the line above to a file called `.Rprofile` stored in the home folder of your system (`Sys.glob("~")` in R returns the home directory).
 
 After that the most recent version of the package can be installed using `install.packages`:
 
@@ -25,12 +30,36 @@ Package updates can be installed using `update.packages` (make sure that the add
 update.packages()
 ```
 
+## Tutorial
+
+The package comes with a vignette describing the basic functionality of the package and how to use it. You can load it with the following command (the package needs to be installed):
+
+```r
+vignette("magpiesets") # Set handling with MAgPIEsets
+```
+
 ## Questions / Problems
 
-In case of questions / problems please contact Jan Dietrich <dietrich@pik-potsdam.de>.
-
+In case of questions / problems please contact Benjamin Leon Bodirsky <bodirsky@pik-potsdam.de>.
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/117550799.svg)](https://zenodo.org/badge/latestdoi/117550799)
+To cite package **magpiesets** in publications use:
+
+Bodirsky B, Humpenoeder F, Mishra A, Karstens K, Weindl I, Molina Bacca E (2020). _magpiesets: MAgPIE sets for R_.
+doi: 10.5281/zenodo.1158588 (URL: https://doi.org/10.5281/zenodo.1158588), R package version 0.38.0, <URL:
+https://github.com/pik-piam/magpiesets>.
+
+A BibTeX entry for LaTeX users is
+
+ ```latex
+@Manual{,
+  title = {magpiesets: MAgPIE sets for R},
+  author = {Benjamin Leon Bodirsky and Florian Humpenoeder and Abhijeet Mishra and Kristine Karstens and Isabelle Weindl and Edna {Molina Bacca}},
+  year = {2020},
+  note = {R package version 0.38.0},
+  doi = {10.5281/zenodo.1158588},
+  url = {https://github.com/pik-piam/magpiesets},
+}
+```
 

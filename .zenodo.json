@@ -1,0 +1,25 @@
+{
+  "title": "magpiesets: MAgPIE sets for R",
+  "version": "0.38.0",
+  "description": "<p>A library containing MAgPIE sets and other support functions.<\/p>",
+  "creators": [
+    {
+      "name": "Bodirsky, Benjamin Leon"
+    },
+    {
+      "name": "Humpenoeder, Florian"
+    },
+    {
+      "name": "Mishra, Abhijeet"
+    },
+    {
+      "name": "Karstens, Kristine"
+    },
+    {
+      "name": "Weindl, Isabelle"
+    },
+    {
+      "name": "Molina Bacca, Edna"
+    }
+  ]
+}
