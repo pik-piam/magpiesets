@@ -1,7 +1,7 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.39.4
+Version: 0.39.5
 Date: 2020-12-24
 Authors@R: c(person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = c("aut","cre")),
              person("Florian", "Humpenoeder", email = "humpenoeder@pik-potsdam.de", role = "aut"),

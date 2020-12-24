@@ -19,9 +19,9 @@
 #'   }
 #'   
 
-FRAnames <- function(x,from="franames",to="FRAnames",mapping="fra_names.csv"){
+FRAnames <- function(x,from="franames",to="magpienames",mapping="fra_names.csv"){
   #setwd("D:/MAgPIE SVN/libraries/magpiesets/inst/extdata")
-  mapping <- read.csv(system.file("extdata",mapping="fra_names.csv",package = "magpiesets"))
+  mapping <- read.csv(system.file("extdata",mapping="fra_names.csv",package = "magpiesets"),sep = ";")
   mapping_from <- as.vector(mapping[,from])
   mapping_to <- as.vector(mapping[,to])
   names(mapping_to) <- mapping_from
