@@ -7,32 +7,39 @@
 #' @author Jan Philipp Dietrich
 #' @examples
 #'  map <- Cell2Country()
-#'  x <- population_magpie
+#'  x <- y <- population_magpie
+#'  
 #'  getCoords(x) <- map[100:109,c("lon","lat")]
+#'  getItems(x,"i") <- NULL
+#'  addLocation(x)
+#'  
+#'  getCells(y) <- map$celliso[100:109]
+#'  addLocation(y)
+#'  
 #'  
 #' @importFrom magclass hasCoords getItems getCoords
 #' @export
 
 addLocation <- function(x){
-  .hasCells <- function(x,map) return(all(getItems(x,dim=1) %in% c(map$cell,map$celliso)))
+  .hasCells   <- function(x,map) return(all(getItems(x,dim=1) %in% map$cell) )
+  .hasCellISO <- function(x,map) return(all(getItems(x,dim=1) %in% map$celliso))
   
   map <- Cell2Country()
   
   if(hasCoords(x)) {
-    if(.hasCells(x,map)) {
-      message("Nothing to do here as coordinates as well as cells are already available.")
-      return(x)
-    }
     co <- getCoords(x)
     names(co) <- c("lon","lat")
     map$cell <- 1:dim(map)[1]
     selection <- merge(map,co)
     getItems(x,dim="country",maindim=1) <- selection$iso
     getItems(x,dim="cell",maindim=1) <- selection$cell
-    return(x)
-  } else if(.hasCells(x,map)) {
-    
+  } else if(.hasCells(x,map) || .hasCellISO(x,map)) {
+    if(.hasCells(x,map)) i <- "cell"
+    else i <- "celliso"
+    rownames(map) <- map[[i]]
+    getCoords(x) <- map[getItems(x,dim=1),c("lon","lat")]
   } else {
-    stop("Neither Coordinates nor cell numbers available!")
+    stop("Cannot handle this case!")
   }
+  return(x)
 }
