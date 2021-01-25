@@ -15,4 +15,8 @@ coverage:
       default:
         target: auto
         threshold: 1%
+<<<<<<< HEAD
         informational: true
+=======
+        informational: true
+>>>>>>> 9dfa4e335925caac306dbb63ca0310c9c6c26258

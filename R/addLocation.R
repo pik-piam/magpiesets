@@ -21,23 +21,27 @@
 #' @export
 
 addLocation <- function(x){
-  .hasCells   <- function(x,map) return(all(getItems(x,dim=1) %in% map$cell) )
-  .hasCellISO <- function(x,map) return(all(getItems(x,dim=1) %in% map$celliso))
+  .hasCells   <- function(x,map) return(all(getItems(x,dim = 1) %in% map$cell) )
+  .hasCellISO <- function(x,map) return(all(getItems(x,dim = 1) %in% map$celliso))
   
   map <- Cell2Country()
   
-  if(hasCoords(x)) {
+  if (hasCoords(x)) {
     co <- getCoords(x)
     names(co) <- c("lon","lat")
     map$cell <- 1:dim(map)[1]
-    selection <- merge(map,co)
-    getItems(x,dim="country",maindim=1) <- selection$iso
-    getItems(x,dim="cell",maindim=1) <- selection$cell
-  } else if(.hasCells(x,map) || .hasCellISO(x,map)) {
-    if(.hasCells(x,map)) i <- "cell"
+    sel <- merge(map, co, all.y = TRUE)
+    if (anyNA(sel$cell)) {
+      sel$cell[is.na(sel$cell)] <- 0
+      sel$iso[is.na(sel$iso)] <- "NA"
+    }
+    getItems(x,dim = "country",maindim = 1) <- sel$iso
+    getItems(x,dim = "cell",   maindim = 1) <- sel$cell
+  } else if (.hasCells(x,map) || .hasCellISO(x,map)) {
+    if (.hasCells(x,map)) i <- "cell"
     else i <- "celliso"
     rownames(map) <- map[[i]]
-    getCoords(x) <- map[getItems(x,dim=1),c("lon","lat")]
+    getCoords(x) <- map[getItems(x,dim = 1),c("lon","lat")]
   } else {
     stop("Cannot handle this case!")
   }

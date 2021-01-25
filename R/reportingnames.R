@@ -10,7 +10,7 @@
 #' @param to reportingnames for official reporting names, reportincolors for typical colorcode of an item
 #' @param mapping csv file in inst/extdata folder.
 #' @return vector with reporting names or volors
-#' @author Benjamin Leon Bodirsky, Florian Humpenoeder
+#' @author Benjamin Leon Bodirsky, Florian Humpenoeder, Patrick v. Jeetze
 #' @examples
 #' 
 #'   \dontrun{

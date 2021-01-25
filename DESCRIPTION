@@ -1,14 +1,15 @@
 Package: magpiesets
 Type: Package
 Title: MAgPIE sets for R
-Version: 0.40.0
-Date: 2021-01-13
+Version: 0.40.2
+Date: 2021-01-25
 Authors@R: c(person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.de", role = c("aut","cre")),
              person("Florian", "Humpenoeder", email = "humpenoeder@pik-potsdam.de", role = "aut"),
              person("Abhijeet", "Mishra", email = "mishra@pik-potsdam.de", role = "aut"),
              person("Kristine", "Karstens", email = "karstens@pik-potsdam.de", role = "aut"),
              person("Isabelle", "Weindl", email = "weindl@pik-potsdam.de", role = "aut"),
              person("Edna", "Molina Bacca", email = "mbacca@pik-potsdam.de", role = "aut"),
+             person("Patrick", "von Jeetze", email = "vjeetze@pik-potsdam.de", role = "aut"),
              person("Jan Philipp", "Dietrich", email = "dietrich@pik-potsdam.de", role = "aut"))
 Description: A library containing MAgPIE sets and other support functions.
 Depends:
