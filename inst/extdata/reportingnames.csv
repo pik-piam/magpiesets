@@ -1,211 +1,211 @@
-"magpienames,""reportingnames"",""reportingcolors"""
-"alcohol,""Alcoholic beverages"",""#b4c6f0"""
-"begr,""Short rotation grasses"",""#5f7319"""
-"betr,""Short rotation trees"",""#734919"""
-"biochar,""Biochar"","
-"biogas,""Biogas"","
-"brans,""Brans"",""#d8bc8e"""
-"cassav_sp,""Tropical roots"",""#92643a"""
-"cottn_pro,""Cotton seed"",""#f2f6ff"""
-"distillers_grain,""Distillers grains"",""#d9c835"""
-"ethanol,""Ethanol"",""#ed2df0"""
-"fibres,""Cotton lint"",""#e2dfe3"""
-"fish,""Fish"",""#aac3f7"""
-"foddr,""Forage"",""#399700"""
-"groundnut,""Groundnuts"",""#ecc774"""
-"livst_chick,""Poultry meat"",""#ffddc9"""
-"livst_egg,""Eggs"",""#e7d8cf"""
-"livst_milk,""Dairy"",""#fafaed"""
-"livst_pig,""Monogastric meat"",""#ffa396"""
-"livst_rum,""Ruminant meat"",""#ec472f"""
-"maiz,""Maize"",""#ffc300"""
-"manure,""Manure"","
-"molasses,""Molasses"",""#521e00"""
-"oils,""Oils"",""#fff3a9"""
-"oilcakes,""Oilcakes"",""#d5be66"""
-"oilpalm,""Oilpalms"",""#3b8429"""
-"others,""Fruits Vegetables Nuts"",""#9fd134"""
-"pasture,""Pasture"",""#cdff61"""
-"potato,""Potatoes"",""#b66913"""
-"puls_pro,""Pulses"",""#b56800"""
-"rapeseed,""Other oil crops (incl rapeseed)"",""#eaff3b"""
-"res_cereals,""Straw"",""#dfff00"""
-"res_fibrous,""Other fibrous crop residues"",""#d0ee00"""
-"res_nonfibrous,""Non fibrous crop residues"",""#c2de00"""
-"res_nouse,""Residues with no double use"","
-"rice_pro,""Rice"",""#ead78d"""
-"scp,""Microbial protein"",""#5ae3d0"""
-"soybean,""Soybean"",""#f8efb8"""
-"sugar,""Sugar"",""#f8f8f8"""
-"sugr_beet,""Sugar beet"",""#e0e0e0"""
-"sugr_cane,""Sugar cane"",""#eeffd1"""
-"sunflower,""Sunflower"",""#eae300"""
-"tece,""Temperate cereals"",""#ffe733"""
-"trce,""Tropical cereals"",""#f6e778"""
-"timber,""Roundwood"",""#7b5a39"""
-"wood,""Industrial roundwood"",""#7b5a39"""
-"woodfuel,""Wood fuel"",""#b3b300"""
-"kall,""All products"","
-"kcr,""Crop products"","
-"kli,""Livestock products"",""#ffa396"""
-"kpr,""Primary products"","
-"ksd,""Secondary products"",""#9700ff"""
-"kst,""Staples products"","
-"kap,""Animal products including Fish"",""#ec472f"""
-"knf,""Non edible products"",""#ed2df0"""
-"kres,""Crop residues"",""#dfff00"""
-"kforest,""Forest products"","
-"kforestry,""Forest products"",""#ed2df0"""
-"k_trade,""Traded products"","
-"k_notrade,""Non traded products"","
-"milling,""Milling"","
-"refining,""Refining"","
-"extracting,""Extracting"","
-"distilling,""Distiilling"","
-"fermentation,""Fermentation"","
-"breeding,""Breeding"","
-"ginning,""Ginning"","
-"pyrolyzing,""Pyrolyzing"","
-"substitutes, ""Substitutes for Byproducts"","
-"cereals,""Cereals"",""#ffe733"""
-"oilcrops,""Oil crops"",""#f8efb8"""
-"sugarcrops,""Sugar crops"",""#eeffd1"""
-"bioenergycrops,""Bioenergy crops"",""#5f7319"""
-"other_crops,""Other crops"",""#b66913"""
-"crops_excluding_bioenergy_and_forage,""Crops"",""#ffe733"""
-"crop,""Cropland"",""#ffe733"""
-"past,""Pastures and Rangelands"",""#cdff61"""
-"forest,""Forest"","
-"forestry,""Managed Forest"","
-"natrforest,""Natural Forest"","
-"primforest,""Primary Forest"","
-"secdforest,""Secondary Forest"","
-"urban,""Urban Area"","
-"other,""Other Land"","
-"primother,""Primary Non-Forest Vegetation and Other Land"","
-"secdother,""Secondary Non-Forest Vegetation"","
-"transboundary,""Transboundary or Oceans"","
-"production,""Production"","
-"domestic_supply,""Domestic Supply"","
-"food,""Food"","
-"feed,""Feed"","
-"seed,""Seed"","
-"waste,""Agricultural Supply Chain Loss"","
-"other_util,""Material"","
-"bioenergy,""Bioenergy"","
-"processed,""Processing"","
-"dom_balanceflow,""Domestic Balanceflow"","
-"harvest,""Harvested Crops"","
-"ag,""Aboveground Crop Residues"","
-"bg,""Belowground Crop Residues"","
-"fixation_crops,""Biological Fixation Symbiotic Crops"","
-"fixation_freeliving,""Biological Fixation Freeliving Microorganisms"","
-"manure,""Manure Recycled from Confinements"","
-"manure_stubble_grazing,""Manure From Stubble Grazing"","
-"ag_recycling,""Recycled Aboveground Crop Residues"","
-"bg_recycling,""Recycled Belowground Crop Residues"","
-"ag_ash,""Ash from Burned Crop Residues"","
-"deposition,""Atmospheric Deposition"","
-"som,""Soil Organic Matter Loss"","
-"fertilizer,""Fertilizer"","
-"balanceflow,""Balanceflow"","
-"surplus,""Nutrient Surplus"","
-"grazing,""Manure From Grazing"","
-"fuel,""Manure Collected As Fuel"","
-"stubble_grazing,""Manure From Stubble Grazing"","
-"confinement,""Manure In Confinements"","
-"bc,""BC"","
-"ch4,""CH4"","
-"co,""CO"","
-"doc,""DOC"","
-"co2,""CO2"","
-"co2_c,""CO2-C"","
-"n2o,""N2O"","
-"n2o_n,""N2O-N"","
-"nh3,""NH3"","
-"nh3_n,""NH3-N"","
-"nmhc,""NMHC"","
-"no2_n,""NO2-N"","
-"no3,""NO3-"","
-"no3_n,""NO3-N"","
-"no2,""NO2"","
-"oc,""OC"","
-"so2,""SO2"","
-"n2_n,""N2-N"","
-"n2o_n_direct,""direct N2O-N emissions"","
-"n2o_n_indirect,""indirect N2O-N emissions from leaching and volatilisation"","
-"balanceflow_n,""nitrogen accounting mismatch"","
-"agricultural_magpie,""Endogenous estimated deposition"","
-"other_exogenous,""Exogenous prescribed path"","
-"industry,""Industry"","
-"transport,""Transport"","
-"luc,""Landuse Change and Biomass Combustion"","
-"waste_management,""Waste disposal"","
-"sewage,""Sewage"","
-"cropland_soils,""Cropland soil emissions"","
-"pasture_soils,""Pasture soil emissions"","
-"nonag_soils,""Non-agricultural soil emissions"","
-"awms,""Animal waste management"","
-"indirect_anthropogenic_deposition_oceans,""Indirect emissions from atmospheric deposition on oceans"","
-"indirect_leaching,""Indirect emissions from leaching"","
-"indirect_leaching,""Indirect emissions from leaching"","
-"groundwater,""Groundwater"","
-"riparian,""Riparian Zones"","
-"oceans,""Oceans"","
-"lightning,""Lightning"","
-"indirect_leaching,""Indirect emissions from leaching"","
-"feed_fish,""Feed for Aquaculture"","
-"feed_livst_chick,""Feed for Poultry meat"","
-"feed_livst_egg,""Feed for Eggs"","
-"feed_livst_milk,""Feed for Dairy"","
-"feed_livst_pig,""Feed for Monogastric meat"","
-"feed_livst_rum,""Feed for Ruminant meat"","
-"inorg_fert,""Inorganic fertilizers"","
-"man_crop,""Manure applied to croplands"","
-"resid,""Crop residues recycled to croplands"","
-"rice,""Rice cultivation"","
-"cropland_soils_denitrification,""Other cropland soil emissions"","
-"dm,""Dry Matter"","
-"nr,""Nitrogen"","
-"p,""Phosphorus"","
-"k,""Potash"","
-"ge,""Gross Energy"","
-"wm,""Wet Matter"","
-"c,""Carbon"","
-"feces,""Human Feces"","
-"urine,""Human Urine"","
-"hh_food_waste,""Household Food Waste"","
-"slaughterwaste,""Slaughter Waste"","
-"excretion,""Manure"","
-"food_processing_loss,""Food Processing Loss"","
-"food_availability,""Household Food Availability"","
-"fooduse,""Food Processing and Marketing"","
-"processing_loss,""Processing Loss"","
-"accumulation,""Accumulation"","
-"untreated,""Untreated Wastewater"","
-"removed,""Nutrients removed in Wastewater Treatment"","
-"freshwater,""Inland freshwater bodies"","
-"riverdischarge,""River discharge"","
-"fixation_ocean,""Nitrogen fixation in oceans"","
-"chemical_industry,""Chemical Industry"","
-"agriculture,""Agriculture"","
-"lagoon,""Anaerobic lagoon"","
-"daily_spread,""Daily spread"","
-"digester,""Anaerobic digester"","
-"drylot,""Dry lot"","
-"liquid_slurry,""Liquid slurry"","
-"other_awms,""Other animal waste management"","
-"pasture_range_paddock,""Pasture range and paddock"","
-"pit_long,""Pit storage less than a month"","
-"pit_short,""Pit storage longer than a month"","
-"solid_storage,""Solid storage"","
-"rainfed,""Rainfed"","
-"irrigated,""Irrigated"","
-"biomass,""Biomass"","
-"removal,""Removed from fields"","
-"burned,""Burned on fields and oxidized"","
-"ash,""Burned on fields and remains as ash"","
-"recycle,""Left on fields"","
-"intact,""Intact"",""#006d2c"""
-"degrad,""Degraded"",""#a50f15"""
-"rewet,""Rewetted"",""#08519c"""
+"magpienames","reportingnames","reportingcolors"
+"alcohol","Alcoholic beverages","#b4c6f0"
+"begr","Short rotation grasses","#5f7319"
+"betr","Short rotation trees","#734919"
+"biochar","Biochar",
+"biogas","Biogas",
+"brans","Brans","#d8bc8e"
+"cassav_sp","Tropical roots","#92643a"
+"cottn_pro","Cotton seed","#f2f6ff"
+"distillers_grain","Distillers grains","#d9c835"
+"ethanol","Ethanol","#ed2df0"
+"fibres","Cotton lint","#e2dfe3"
+"fish","Fish","#aac3f7"
+"foddr","Forage","#399700"
+"groundnut","Groundnuts","#ecc774"
+"livst_chick","Poultry meat","#ffddc9"
+"livst_egg","Eggs","#e7d8cf"
+"livst_milk","Dairy","#fafaed"
+"livst_pig","Monogastric meat","#ffa396"
+"livst_rum","Ruminant meat","#ec472f"
+"maiz","Maize","#ffc300"
+"manure","Manure",
+"molasses","Molasses","#521e00"
+"oils","Oils","#fff3a9"
+"oilcakes","Oilcakes","#d5be66"
+"oilpalm","Oilpalms","#3b8429"
+"others","Fruits Vegetables Nuts","#9fd134"
+"pasture","Pasture","#cdff61"
+"potato","Potatoes","#b66913"
+"puls_pro","Pulses","#b56800"
+"rapeseed","Other oil crops (incl rapeseed)","#eaff3b"
+"res_cereals","Straw","#dfff00"
+"res_fibrous","Other fibrous crop residues","#d0ee00"
+"res_nonfibrous","Non fibrous crop residues","#c2de00"
+"res_nouse","Residues with no double use",
+"rice_pro","Rice","#ead78d"
+"scp","Microbial protein","#5ae3d0"
+"soybean","Soybean","#f8efb8"
+"sugar","Sugar","#f8f8f8"
+"sugr_beet","Sugar beet","#e0e0e0"
+"sugr_cane","Sugar cane","#eeffd1"
+"sunflower","Sunflower","#eae300"
+"tece","Temperate cereals","#ffe733"
+"trce","Tropical cereals","#f6e778"
+"timber","Roundwood","#7b5a39"
+"wood","Industrial roundwood","#7b5a39"
+"woodfuel","Wood fuel","#b3b300"
+"kall","All products",
+"kcr","Crop products",
+"kli","Livestock products","#ffa396"
+"kpr","Primary products",
+"ksd","Secondary products","#9700ff"
+"kst","Staples products",
+"kap","Animal products including Fish","#ec472f"
+"knf","Non edible products","#ed2df0"
+"kres","Crop residues","#dfff00"
+"kforest","Forest products",
+"kforestry","Forest products","#ed2df0"
+"k_trade","Traded products",
+"k_notrade","Non traded products",
+"milling","Milling",
+"refining","Refining",
+"extracting","Extracting",
+"distilling","Distiilling",
+"fermentation","Fermentation",
+"breeding","Breeding",
+"ginning","Ginning",
+"pyrolyzing","Pyrolyzing",
+"substitutes"," Substitutes for Byproducts",
+"cereals","Cereals","#ffe733"
+"oilcrops","Oil crops","#f8efb8"
+"sugarcrops","Sugar crops","#eeffd1"
+"bioenergycrops","Bioenergy crops","#5f7319"
+"other_crops","Other crops","#b66913"
+"crops_excluding_bioenergy_and_forage","Crops","#ffe733"
+"crop","Cropland","#ffe733"
+"past","Pastures and Rangelands","#cdff61"
+"forest","Forest",
+"forestry","Managed Forest",
+"natrforest","Natural Forest",
+"primforest","Primary Forest",
+"secdforest","Secondary Forest",
+"urban","Urban Area",
+"other","Other Land",
+"primother","Primary Non-Forest Vegetation and Other Land",
+"secdother","Secondary Non-Forest Vegetation",
+"transboundary","Transboundary or Oceans",
+"production","Production",
+"domestic_supply","Domestic Supply",
+"food","Food",
+"feed","Feed",
+"seed","Seed",
+"waste","Agricultural Supply Chain Loss",
+"other_util","Material",
+"bioenergy","Bioenergy",
+"processed","Processing",
+"dom_balanceflow","Domestic Balanceflow",
+"harvest","Harvested Crops",
+"ag","Aboveground Crop Residues",
+"bg","Belowground Crop Residues",
+"fixation_crops","Biological Fixation Symbiotic Crops",
+"fixation_freeliving","Biological Fixation Freeliving Microorganisms",
+"manure","Manure Recycled from Confinements",
+"manure_stubble_grazing","Manure From Stubble Grazing",
+"ag_recycling","Recycled Aboveground Crop Residues",
+"bg_recycling","Recycled Belowground Crop Residues",
+"ag_ash","Ash from Burned Crop Residues",
+"deposition","Atmospheric Deposition",
+"som","Soil Organic Matter Loss",
+"fertilizer","Fertilizer",
+"balanceflow","Balanceflow",
+"surplus","Nutrient Surplus",
+"grazing","Manure From Grazing",
+"fuel","Manure Collected As Fuel",
+"stubble_grazing","Manure From Stubble Grazing",
+"confinement","Manure In Confinements",
+"bc","BC",
+"ch4","CH4",
+"co","CO",
+"doc","DOC",
+"co2","CO2",
+"co2_c","CO2-C",
+"n2o","N2O",
+"n2o_n","N2O-N",
+"nh3","NH3",
+"nh3_n","NH3-N",
+"nmhc","NMHC",
+"no2_n","NO2-N",
+"no3","NO3-",
+"no3_n","NO3-N",
+"no2","NO2",
+"oc","OC",
+"so2","SO2",
+"n2_n","N2-N",
+"n2o_n_direct","direct N2O-N emissions",
+"n2o_n_indirect","indirect N2O-N emissions from leaching and volatilisation",
+"balanceflow_n","nitrogen accounting mismatch",
+"agricultural_magpie","Endogenous estimated deposition",
+"other_exogenous","Exogenous prescribed path",
+"industry","Industry",
+"transport","Transport",
+"luc","Landuse Change and Biomass Combustion",
+"waste_management","Waste disposal",
+"sewage","Sewage",
+"cropland_soils","Cropland soil emissions",
+"pasture_soils","Pasture soil emissions",
+"nonag_soils","Non-agricultural soil emissions",
+"awms","Animal waste management",
+"indirect_anthropogenic_deposition_oceans","Indirect emissions from atmospheric deposition on oceans",
+"indirect_leaching","Indirect emissions from leaching",
+"indirect_leaching","Indirect emissions from leaching",
+"groundwater","Groundwater",
+"riparian","Riparian Zones",
+"oceans","Oceans",
+"lightning","Lightning",
+"indirect_leaching","Indirect emissions from leaching",
+"feed_fish","Feed for Aquaculture",
+"feed_livst_chick","Feed for Poultry meat",
+"feed_livst_egg","Feed for Eggs",
+"feed_livst_milk","Feed for Dairy",
+"feed_livst_pig","Feed for Monogastric meat",
+"feed_livst_rum","Feed for Ruminant meat",
+"inorg_fert","Inorganic fertilizers",
+"man_crop","Manure applied to croplands",
+"resid","Crop residues recycled to croplands",
+"rice","Rice cultivation",
+"cropland_soils_denitrification","Other cropland soil emissions",
+"dm","Dry Matter",
+"nr","Nitrogen",
+"p","Phosphorus",
+"k","Potash",
+"ge","Gross Energy",
+"wm","Wet Matter",
+"c","Carbon",
+"feces","Human Feces",
+"urine","Human Urine",
+"hh_food_waste","Household Food Waste",
+"slaughterwaste","Slaughter Waste",
+"excretion","Manure",
+"food_processing_loss","Food Processing Loss",
+"food_availability","Household Food Availability",
+"fooduse","Food Processing and Marketing",
+"processing_loss","Processing Loss",
+"accumulation","Accumulation",
+"untreated","Untreated Wastewater",
+"removed","Nutrients removed in Wastewater Treatment",
+"freshwater","Inland freshwater bodies",
+"riverdischarge","River discharge",
+"fixation_ocean","Nitrogen fixation in oceans",
+"chemical_industry","Chemical Industry",
+"agriculture","Agriculture",
+"lagoon","Anaerobic lagoon",
+"daily_spread","Daily spread",
+"digester","Anaerobic digester",
+"drylot","Dry lot",
+"liquid_slurry","Liquid slurry",
+"other_awms","Other animal waste management",
+"pasture_range_paddock","Pasture range and paddock",
+"pit_long","Pit storage less than a month",
+"pit_short","Pit storage longer than a month",
+"solid_storage","Solid storage",
+"rainfed","Rainfed",
+"irrigated","Irrigated",
+"biomass","Biomass",
+"removal","Removed from fields",
+"burned","Burned on fields and oxidized",
+"ash","Burned on fields and remains as ash",
+"recycle","Left on fields",
+"intact","Intact","#006d2c"
+"degrad","Degraded","#a50f15"
+"rewet","Rewetted","#08519c"
