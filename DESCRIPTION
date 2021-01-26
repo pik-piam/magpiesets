@@ -14,7 +14,7 @@ Authors@R: c(person("Benjamin Leon", "Bodirsky", email = "bodirsky@pik-potsdam.d
 Description: A library containing MAgPIE sets and other support functions.
 Depends:
     base,
-    magclass
+    magclass(>= 5.20.3)
 URL: https://github.com/pik-piam/magpiesets, https://doi.org/10.5281/zenodo.1158588
 BugReports: https://github.com/pik-piam/magpiesets/issues
 License: LGPL-3 | file LICENSE
