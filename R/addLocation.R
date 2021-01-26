@@ -35,6 +35,8 @@ addLocation <- function(x){
       sel$cell[is.na(sel$cell)] <- 0
       sel$iso[is.na(sel$iso)] <- "NA"
     }
+    rownames(sel) <- paste0(sel$lon,"#",sel$lat)
+    sel <- sel[paste0(co$lon,"#",co$lat),]
     getItems(x,dim = "country",maindim = 1) <- sel$iso
     getItems(x,dim = "cell",   maindim = 1) <- sel$cell
   } else if (.hasCells(x,map) || .hasCellISO(x,map)) {
