@@ -1,5 +1,5 @@
 ---
-title: "Set handling with MAgPIEsets"
+title: "Working with magpiesets"
 author: "Kristine Karstens"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette

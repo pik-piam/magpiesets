@@ -1,6 +1,6 @@
 {
   "title": "magpiesets: MAgPIE sets for R",
-  "version": "0.40.2",
+  "version": "0.40.4",
   "description": "<p>A library containing MAgPIE sets and other support functions.<\/p>",
   "creators": [
     {
@@ -23,6 +23,9 @@
     },
     {
       "name": "von Jeetze, Patrick"
+    },
+    {
+      "name": "Dietrich, Jan Philipp"
     }
   ]
 }
