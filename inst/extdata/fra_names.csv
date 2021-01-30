@@ -1,33 +1,33 @@
-"franames";"magpienames";"reportingcolors"
-"forestArea";"Forest";"#b4c6f0"
-"otherWoodedLand";"Other Wooded Land";"#d5be66"
-"landArea";"Land";"#734919"
-"naturallyRegeneratingForest";"Natural Forest";"#ffe733"
-"plantedForest";"Planted Forest";"#f8efb8"
-"plantationForest";"Managed Forest";"#d8bc8e"
-"plantationForestIntroduced";"Plantations Int";"#92643a"
-"otherPlantedForest";"Other Planted Forest";"#f2f6ff"
-"primary";"Primary Forest";"#d9c835"
-"tempUnstocked";"Unstocked";"#ed2df0"
-"bamboos";"Bamboos";"#e2dfe3"
-"mangroves";"Mangroves";"#aac3f7"
-"rubber";"Rubber";"#399700"
-"palms";"Palms";"#ecc774"
-"treeOrchards";"Tree Orchards";"#ffddc9"
-"agroforestry";"Agroforestry";"#e7d8cf"
-"treesUrbanSettings";"Urban Trees";"#fafaed"
-"other";"Other Land";"#ffa396"
-"nat_reg";"Natural Forest";"#ec472f"
-"planted";"Planted Forest";"#ffc300"
-"plantation";"Managed Forest";"#b66913"
-"other_planted";"Other Planted Forest";"#521e00"
-"forest";"Forest";"#fff3a9"
-"owl";"Other Wooded Land";"#d5be66"
-"agb";"Aboveground";"#3b8429"
-"bgb";"Belowground";"#9fd134"
-"dwb";"Deadweight";"#cdff61"
-"dw";"Deadweight";"#b66913"
-"prod";"Production";"#b56800"
-"prot";"Protection";"#eaff3b"
-"biodiv";"Biodoversity";"#dfff00"
-"socserv";"Soil Conservation";"#d0ee00"
+franames;magpienames;reportingcolors
+forestArea;Forest;#b4c6f0
+otherWoodedLand;Other Wooded Land;#d5be66
+landArea;Land;#734919
+naturallyRegeneratingForest;Natural Forest;#ffe733
+plantedForest;Planted Forest;#f8efb8
+plantationForest;Plantations;#d8bc8e
+plantationForestIntroduced;Plantations Int;#92643a
+otherPlantedForest;Other Planted Forest;#f2f6ff
+primary;Primary Forest;#d9c835
+tempUnstocked;Unstocked;#ed2df0
+bamboos;Bamboos;#e2dfe3
+mangroves;Mangroves;#aac3f7
+rubber;Rubber;#399700
+palms;Palms;#ecc774
+treeOrchards;Tree Orchards;#ffddc9
+agroforestry;Agroforestry;#e7d8cf
+treesUrbanSettings;Urban Trees;#fafaed
+other;Other Land;#ffa396
+nat_reg;Natural Forest;#ec472f
+planted;Planted Forest;#ffc300
+plantation;Managed Forest;#b66913
+other_planted;Other Planted Forest;#521e00
+forest;Forest;#fff3a9
+owl;Other Wooded Land;#d5be66
+agb;Aboveground;#3b8429
+bgb;Belowground;#9fd134
+dwb;Deadweight;#cdff61
+dw;Deadweight;#b66913
+prod;Production;#b56800
+prot;Protection;#eaff3b
+biodiv;Biodoversity;#dfff00
+socserv;Soil Conservation;#d0ee00
