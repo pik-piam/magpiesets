@@ -3,7 +3,7 @@ forestArea;Forest;#b4c6f0
 otherWoodedLand;Other Wooded Land;#d5be66
 landArea;Land;#734919
 naturallyRegeneratingForest;Natural Forest;#ffe733
-plantedForest;Planted Forest;#f8efb8
+plantedForest;Managed Forest;#f8efb8
 plantationForest;Plantations;#d8bc8e
 plantationForestIntroduced;Plantations Int;#92643a
 otherPlantedForest;Other Planted Forest;#f2f6ff
@@ -19,7 +19,7 @@ treesUrbanSettings;Urban Trees;#fafaed
 other;Other Land;#ffa396
 nat_reg;Natural Forest;#ec472f
 planted;Planted Forest;#ffc300
-plantation;Managed Forest;#b66913
+plantation;Plantations;#b66913
 other_planted;Other Planted Forest;#521e00
 forest;Forest;#fff3a9
 owl;Other Wooded Land;#d5be66
