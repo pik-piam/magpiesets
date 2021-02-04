@@ -17,15 +17,19 @@
 #'  addLocation(y)
 #'  
 #'  
-#' @importFrom magclass hasCoords getItems getCoords
+#' @importFrom magclass hasCoords getItems getCoords dimExists ncells clean_magpie
 #' @export
 
 addLocation <- function(x){
   .hasCells   <- function(x,map) return(all(getItems(x,dim = 1) %in% map$cell) )
   .hasCellISO <- function(x,map) return(all(getItems(x,dim = 1) %in% map$celliso))
+  .has59199 <- function(x) return(ncells(x) == 59199 &&  
+                                    dimExists(1.2,x) && 
+                                    all(sort(as.integer(getItems(x,dim = 1.2,full = TRUE))) == 1:59199))
   
   map <- Cell2Country()
   
+  x <- clean_magpie(x, what = "sets")
   if (hasCoords(x)) {
     co <- getCoords(x)
     names(co) <- c("lon","lat")
@@ -39,9 +43,13 @@ addLocation <- function(x){
     sel <- sel[paste0(co$lon,"#",co$lat),]
     getItems(x,dim = "country",maindim = 1) <- sel$iso
     getItems(x,dim = "cell",   maindim = 1) <- sel$cell
-  } else if (.hasCells(x,map) || .hasCellISO(x,map)) {
+  } else if (.hasCells(x,map) || .hasCellISO(x,map) || .has59199(x)) {
     if (.hasCells(x,map)) i <- "cell"
-    else i <- "celliso"
+    else if(.hasCellISO(x,map)) i <- "celliso"
+    else {
+      i <- "other"
+      map$other <- getItems(x,dim=1,full=TRUE)[order(as.integer(getItems(x,1.2,full=TRUE)))]
+    }
     rownames(map) <- map[[i]]
     getCoords(x) <- map[getItems(x,dim = 1),c("lon","lat")]
   } else {
