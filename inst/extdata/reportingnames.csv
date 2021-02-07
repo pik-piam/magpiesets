@@ -163,6 +163,8 @@
 "feed_livst_pig","Feed for Monogastric meat",
 "feed_livst_rum","Feed for Ruminant meat",
 "inorg_fert","Inorganic fertilizers",
+"inorg_fert_crop","Inorganic fertilizers|Cropland",
+"inorg_fert_past","Inorganic fertilizers|Pasture",
 "man_crop","Manure applied to croplands",
 "resid","Crop residues recycled to croplands",
 "rice","Rice cultivation",
