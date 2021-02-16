@@ -2,9 +2,9 @@
 #' @description Function translates (if possible) cell numbers into coordinates or coordinates 
 #' into cell numbers and addes them to the spatial dimension of the object.
 #' @param x magpie object to be enriched with spatial information. Currently only works
-#' for 0.5 degree data sets with 59199 cells or a subset of it.
+#' for 0.5 degree data sets with 59199 or 67420 cells or a subset of it.
 #' @return magpie object with added spatial subdimensions
-#' @author Jan Philipp Dietrich
+#' @author Jan Philipp Dietrich, Felicitas Beier
 #' @examples
 #'  map <- Cell2Country()
 #'  x <- y <- population_magpie
@@ -17,24 +17,26 @@
 #'  addLocation(y)
 #'  
 #'  
-#' @importFrom magclass hasCoords getItems getCoords dimExists ncells clean_magpie
+#' @importFrom magclass hasCoords getItems getCoords dimExists ncells clean_magpie getCells
 #' @export
 
 addLocation <- function(x){
-  .hasCells   <- function(x,map) return(all(getItems(x,dim = 1) %in% map$cell) )
-  .hasCellISO <- function(x,map) return(all(getItems(x,dim = 1) %in% map$celliso))
-  .has59199 <- function(x) return(ncells(x) == 59199 &&  
+  .hasCells   <- function(x,map59199) return(all(getItems(x,dim = 1) %in% map59199$cell) )
+  .hasCellISO <- function(x,map59199) return(all(getItems(x,dim = 1) %in% map59199$celliso))
+  .has59199   <- function(x) return(ncells(x) == 59199 &&  
                                     dimExists(1.2,x) && 
                                     all(sort(as.integer(getItems(x,dim = 1.2,full = TRUE))) == 1:59199))
+  .has67420   <- function(x) return(ncells(x) == 67420)
   
-  map <- Cell2Country()
+  map59199 <- Cell2Country()
+  map67420 <- readRDS(system.file("extdata", "mapLPJcells2Coords.rds", package="magpiesets"))
   
   x <- clean_magpie(x, what = "sets")
   if (hasCoords(x)) {
     co <- getCoords(x)
     names(co) <- c("lon","lat")
-    map$cell <- 1:dim(map)[1]
-    sel <- merge(map, co, all.y = TRUE)
+    map59199$cell <- 1:dim(map59199)[1]
+    sel <- merge(map59199, co, all.y = TRUE)
     if (anyNA(sel$cell)) {
       sel$cell[is.na(sel$cell)] <- 0
       sel$iso[is.na(sel$iso)] <- "NA"
@@ -43,15 +45,18 @@ addLocation <- function(x){
     sel <- sel[paste0(co$lon,"#",co$lat),]
     getItems(x,dim = "country",maindim = 1) <- sel$iso
     getItems(x,dim = "cell",   maindim = 1) <- sel$cell
-  } else if (.hasCells(x,map) || .hasCellISO(x,map) || .has59199(x)) {
-    if (.hasCells(x,map)) i <- "cell"
-    else if(.hasCellISO(x,map)) i <- "celliso"
+  } else if (.hasCells(x,map59199) || .hasCellISO(x,map59199) || .has59199(x)) {
+    if (.hasCells(x,map59199)) i <- "cell"
+    else if(.hasCellISO(x,map59199)) i <- "celliso"
     else {
       i <- "other"
-      map$other <- getItems(x,dim=1,full=TRUE)[order(as.integer(getItems(x,1.2,full=TRUE)))]
+      map59199$other <- getItems(x,dim=1,full=TRUE)[order(as.integer(getItems(x,1.2,full=TRUE)))]
     }
-    rownames(map) <- map[[i]]
-    getCoords(x) <- map[getItems(x,dim = 1),c("lon","lat")]
+    rownames(map59199) <- map59199[[i]]
+    getCoords(x) <- map59199[getItems(x,dim = 1),c("lon","lat")]
+  } else if (.has67420(x)) {
+    # transform lpjcells to coordinates
+    getCells(x) <- paste(map67420$coords, map67420$iso, sep=".")
   } else {
     stop("Cannot handle this case!")
   }
