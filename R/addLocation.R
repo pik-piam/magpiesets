@@ -55,6 +55,8 @@ addLocation <- function(x){
     rownames(map59199) <- map59199[[i]]
     getCoords(x) <- map59199[getItems(x,dim = 1),c("lon","lat")]
   } else if (.has67420(x)) {
+    # sort cells correctly
+    x <- x[map67420$coords,,]
     # transform lpjcells to coordinates
     getCells(x) <- paste(map67420$coords, map67420$iso, sep=".")
   } else {
