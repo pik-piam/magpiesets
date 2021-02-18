@@ -17,7 +17,7 @@
 #'  addLocation(y)
 #'  
 #'  
-#' @importFrom magclass hasCoords getItems getCoords dimExists ncells clean_magpie getCells
+#' @importFrom magclass hasCoords getItems getCoords dimExists ncells clean_magpie getCells getSets
 #' @export
 
 addLocation <- function(x){
@@ -55,10 +55,13 @@ addLocation <- function(x){
     rownames(map59199) <- map59199[[i]]
     getCoords(x) <- map59199[getItems(x,dim = 1),c("lon","lat")]
   } else if (.has67420(x)) {
-    # sort cells correctly
-    x <- x[map67420$coords,,]
+    
     # transform lpjcells to coordinates
-    getCells(x) <- paste(map67420$coords, map67420$iso, sep=".")
+    getItems(x, dim="x", maindim=1)   <- gsub("(.*)\\.(.*)","\\1",map67420$coords)
+    getItems(x, dim="y", maindim=1)   <- gsub("(.*)\\.(.*)","\\2",map67420$coords)
+    getItems(x, dim="iso", maindim=1) <- map67420$iso
+    getSets(x)[1] <- "N"
+    
   } else {
     stop("Cannot handle this case!")
   }
