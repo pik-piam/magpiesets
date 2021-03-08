@@ -9,6 +9,7 @@
 #' @param sep summation symbol (+,++,-)
 #' @param dim Dimension in which the modification, should take place
 #' @param check Switch to turn off checking routine, if FALSE. Default is TRUE.
+#' @param excludeLevels levels to be excluded from summation, e.g. 1 for Trade in Trade|Net-Exports.
 #' @return MAgPIE object
 #' 
 #' @details summationhelper should help to organize the subcategories into groups for e.g. stackplots. Notice the following hints:
@@ -40,7 +41,7 @@
 #'   }
 #' 
 
-summationhelper <- function(x, sep = "+", dim = 3.1, check = TRUE){
+summationhelper <- function(x, sep = "+", dim = 3.1, check = TRUE, excludeLevels=0){
   
   if(!is.magpie(x)){
     cat("Object passed to this function is not a MAgPIE object.\n")
@@ -82,7 +83,9 @@ summationhelper <- function(x, sep = "+", dim = 3.1, check = TRUE){
       # We are interested in the last fragment of names separated by "|". These are the fragments which 
       # signify if a "+" has to be added to names. Hence using "tail" here.
       # We already made a counting of "|" in names. The number fragments are number of "|" + 1  
-      xx[count+1] <- paste0(sum_symbol, tail(xx,1))
+      if (!(length(xx) %in% excludeLevels)){
+        xx[count+1] <- paste0(sum_symbol, tail(xx,1))
+      }
       
       # Now that the last element of vector has been modified according to our needs,
       # We "collapse" the vector whilst adding a "|" back to original places.
