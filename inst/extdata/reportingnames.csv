@@ -45,6 +45,7 @@ trce,Tropical cereals,#f6e778
 timber,Roundwood,#7b5a39
 wood,Industrial roundwood,#7b5a39
 woodfuel,Wood fuel,#b3b300
+constr_wood,Timber for construction,#b3b300
 kall,All products,
 kcr,Crop products,
 kli,Livestock products,#ffa396
