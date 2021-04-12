@@ -1,4 +1,4 @@
-all,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,kli,kpr,knpr,ksd,kst,kap,kfo,knf,kres,kfeed,cereals20,cereals,oilcrops,sugarcrops,bioenergycrops,other_crops,crops_excluding_bioenergy_and_forage,kforest,k_trade,k_notrade,time,t_all,processing20,past,past_all,past_soc,awms,awms_prp,awms_conf,pollutants_all,pollutants,n_pollutants_direct,land,kall_agg1,kall_agg2,npk,attributes,dm_ge_nr,report_it
+all,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,kli,kpr,knpr,ksd,kst,kap,kfo,knf,kres,kfeed,cereals20,cereals,oilcrops,sugarcrops,bioenergycrops,other_crops,crops_excluding_bioenergy_and_forage,kforestry,k_trade,k_notrade,time,t_all,processing20,past,past_all,past_soc,awms,awms_prp,awms_conf,pollutants_all,pollutants,n_pollutants_direct,land,kall_agg1,kall_agg2,npk,attributes,dm_ge_nr,report_it
 alcohol,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,knpr,ksd,kst,,kfo,,,,,,,,,,,,k_trade,,,,,,,,,,,,,,,,,,,,
 begr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,k_trade,,,,,,,,,,,,,,,,,,,,
 betr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,k_trade,,,,,,,,,,,,,,,,,,,,
@@ -41,8 +41,9 @@ sugr_cane,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,
 sunflower,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,kfeed,,,oilcrops,,,,crops_excluding_bioenergy_and_forage,,k_trade,,,,,,,,,,,,,,,,,,,,
 tece,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,kfeed,cereals20,cereals,,,,,crops_excluding_bioenergy_and_forage,,k_trade,,,,,,,,,,,,,,,,,,,,
 trce,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,kfeed,cereals20,cereals,,,,,crops_excluding_bioenergy_and_forage,,k_trade,,,,,,,,,,,,,,,,,,,,
-wood,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforest,k_trade,,,,,,,,,,,,,,,,,,,,
-woodfuel,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforest,k_trade,,,,,,,,,,,,,,,,,,,,
+wood,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
+woodfuel,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
+constr_wood,default_sep18,biogas_dec18,biochar_jan19,kall,k,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
 y1965,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
 y1970,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
 y1975,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
