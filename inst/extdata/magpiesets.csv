@@ -43,7 +43,6 @@ tece,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,kfeed
 trce,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,kst,,kfo,,,kfeed,cereals20,cereals,,,,,crops_excluding_bioenergy_and_forage,,k_trade,,,,,,,,,,,,,,,,,,,,
 wood,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
 woodfuel,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
-constr_wood,default_sep18,biogas_dec18,biochar_jan19,kall,k,,,,,,,,,,,,,,,,,,,kforestry,k_trade,,,,,,,,,,,,,,,,,,,,
 y1965,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
 y1970,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
 y1975,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,time,,,past,past_all,past_soc,,,,,,,,,,,,,
