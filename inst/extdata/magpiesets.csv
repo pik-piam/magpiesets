@@ -181,7 +181,7 @@ kst,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kap,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 knf,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kres,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kall_agg1,kall_agg2,,,,report_it
-kforest,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,report_it
+kforestry,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,report_it
 nr,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,npk,attributes,dm_ge_nr,
 p,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,npk,attributes,,
 k,default_sep18,biogas_dec18,biochar_jan19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,npk,attributes,,
