@@ -3,14 +3,15 @@
 #' Automatically recognizes if only a reduced form of "kall" is provided.
 #'
 #' @export
-#' @import magclass
+#' @importFrom magclass ndim getNames mbind add_dimension
 #'
 #' @param x Magpie object with data that shall be reported
 #' @param dim Dimension in which magpie products ("tece" etc) can be found
 #' @param level_zero_name the general reporting name of the Magpie object (e.g. "Agricultural Production")
 #' @param detail if detail=F, the subcategories of groups are not reported (e.g. "soybean" within "oilcrops")
 #' @param sort sort items in 3rd dimension alphabetically (TRUE or FALSE)
-#' @param partly boolean or set name, that should be reported in detail, even if it is just partly provided within the gdx
+#' @param partly boolean or set name, that should be reported in detail, even if it is just partly provided
+#' within the gdx
 #' @param version Switch between different version of the magpiesets library
 #' @return MAgPIE object with aggregated and renamed items in 3rd dimension
 #' @author Benjamin Leon Bodirsky, Florian Humpenoeder, Kristine Karstens
@@ -20,23 +21,24 @@
 #' x <- reporthelper(x)
 #' }
 #'
-reporthelper <- function(x, dim = 3.1, level_zero_name = "All products", detail = TRUE, sort = FALSE, partly = FALSE, version = NULL) {
+reporthelper <- function(x, dim = 3.1, level_zero_name = "All products", detail = TRUE,  # nolint
+                         sort = FALSE, partly = FALSE, version = NULL) {
 
   dim2 <- as.numeric(substring(dim, 3))
 
   # Set partly values
-  set_partly <- logical(14)
-  set_names  <- findset("report_it", version = version)
-  names(set_partly)  <- set_names
+  setPartly <- logical(14)
+  setNames  <- findset("report_it", version = version)
+  names(setPartly)  <- setNames
 
   if (!is.logical(partly)) {
-    set_partly[partly] <- TRUE
+    setPartly[partly] <- TRUE
   } else if (partly == TRUE) {
-    set_partly[]       <- TRUE
+    setPartly[]       <- TRUE
   }
 
   # Renaming function (including renaming of higher level category names)
-  rename_it <- function(report, set, prefix = "", groupname = T, subitems = F, partly = FALSE) {
+  renameIt <- function(report, set, prefix = "", groupname = T, subitems = F, partly = FALSE) {
 
     elements <- findset(set, noset = "original", version = version)
 
@@ -60,7 +62,7 @@ reporthelper <- function(x, dim = 3.1, level_zero_name = "All products", detail 
 
       tmp1 <- dimSums(x[, , elements], dim = dim)
 
-      if (length(fulldim(x)[[1]]) > 3) {
+      if (ndim(x, dim = 3) > 1) {
         tmp1 <- add_dimension(x = tmp1, dim = dim, add = "products", paste0(prefix, groupname))
       } else {
         getNames(tmp1, dim = dim2) <- paste0(prefix, groupname)
@@ -85,7 +87,8 @@ reporthelper <- function(x, dim = 3.1, level_zero_name = "All products", detail 
   }
 
   # Start renaming with set 'kall'
-  out <- rename_it(report = NULL, set = "kall", subitems = F, prefix = level_zero_name, groupname = F, partly = unname(set_partly["kall"]))
+  out <- renameIt(report = NULL, set = "kall", subitems = F, prefix = level_zero_name,
+                   groupname = F, partly = unname(setPartly["kall"]))
 
   # Renaming prefix for subsub-categories
   if (level_zero_name == "") {
@@ -95,16 +98,19 @@ reporthelper <- function(x, dim = 3.1, level_zero_name = "All products", detail 
   }
 
   # Loop over sub- and subsub-categories
-  for (item in setdiff(set_names, "kall")) {
+  for (item in setdiff(setNames, "kall")) {
 
     if (item %in% c("cereals", "oilcrops", "sugarcrops", "other_crops")) {
-      out <- rename_it(report = out, set = item, subitems = detail, prefix = prefix, groupname = TRUE, partly = unname(set_partly[item]))
+      out <- renameIt(report = out, set = item, subitems = detail, prefix = prefix,
+                       groupname = TRUE, partly = unname(setPartly[item]))
 
-    } else if (item %in% c("kli", "ksd", "kres", "bioenergycrops", "kforestry")) { ## Someday, the confusion between kforest and kforestry will come to haunt me
-      out <- rename_it(report = out, set = item, subitems = detail,  prefix = level_zero_name, groupname = TRUE, partly = unname(set_partly[item]))
+    } else if (item %in% c("kli", "ksd", "kres", "bioenergycrops", "kforestry")) {
+      out <- renameIt(report = out, set = item, subitems = detail,  prefix = level_zero_name,
+                       groupname = TRUE, partly = unname(setPartly[item]))
 
     } else {
-      out <- rename_it(report = out, set = item, subitems = FALSE,  prefix = level_zero_name, groupname = TRUE, partly = unname(set_partly[item]))
+      out <- renameIt(report = out, set = item, subitems = FALSE,  prefix = level_zero_name,
+                       groupname = TRUE, partly = unname(setPartly[item]))
     }
   }
 
