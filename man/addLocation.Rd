@@ -4,7 +4,7 @@
 \alias{addLocation}
 \title{addLocation}
 \usage{
-addLocation(x, fillMissing = NULL, naCellNumber = 0)
+addLocation(x, fillMissing = NULL, naCellNumber = 0, format = "both")
 }
 \arguments{
 \item{x}{magpie object to be enriched with spatial information. Currently only works
@@ -15,25 +15,35 @@ missing cells will be added with this value (e.g. all set to 0 if fillMissing is
 
 \item{naCellNumber}{number or string given as cell number for cells which do not have an assigned cell
 number in the 59199 mapping}
+
+\item{format}{either "both" or "iso.grid". When set to "iso.grid", the function will remove the pre-existing
+spatial dimensions after adding the coordinates' sorted iso.grid location. This argument is ignored for input
+objects initially containing iso.grid and LPJ datasets.}
 }
 \value{
 magpie object with added spatial subdimensions
 }
 \description{
 Function translates (if possible) cell numbers into coordinates or coordinates
-into cell numbers and addes them to the spatial dimension of the object.
+into cell numbers and adds them to the spatial dimension of the object.
 }
 \examples{
-map <- Cell2Country()
- x <- y <- population_magpie
+
+ map <- Cell2Country()
+ x <- y <- z <- population_magpie
 
  getCoords(x) <- map[100:109, c("lon", "lat")]
  getItems(x, "i") <- NULL
  addLocation(x)
 
- getCells(y) <- map$celliso[100:109]
- addLocation(y)
+ getCoords(y) <- map[100:109, c("lon", "lat")]
+ getItems(y, "i") <- NULL
+ addLocation(y, format = "iso.grid")
+
+ getCells(z) <- map$celliso[100:109]
+ addLocation(z)
+
 }
 \author{
-Jan Philipp Dietrich, Felicitas Beier
+Jan Philipp Dietrich, Felicitas Beier, Michael Crawford
 }
