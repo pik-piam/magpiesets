@@ -32,7 +32,7 @@ function returning the reporting names of a vector
     reportingnames("tece")
     reportingnames("tece",to="reportingcolors")
   }
-  
+
 }
 \author{
 Benjamin Leon Bodirsky, Florian Humpenoeder, Patrick v. Jeetze
