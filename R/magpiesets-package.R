@@ -4,7 +4,6 @@
 #' 
 #' @name magpiesets-package
 #' @aliases magpiesets-package magpiesets
-#' @docType package
 #' @author  Benjamin Leon Bodirsky (Maintainer: \email{bodirsky@@pik-potsdam.de}), Florian Humpenoeder, 
 #' Abhijeet Mishra, Kristine Karstens 
 #' @param version Switch between different version of the magpiesets library
@@ -13,4 +12,4 @@
 #'     biogas_dec18   \tab biogas extension including biogas, biochar and manure in 'kall'\cr
 #'     biochar_jan19  \tab biochar extension including biochar and pyrolyzing\cr
 #'   }
-NULL
+"_PACKAGE"
