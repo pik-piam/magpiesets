@@ -1,7 +1,7 @@
 all,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,kli,kpr,knpr,ksd,kst,kap,kfo,knf,kres,kfeed,cereals20,cereals,oilcrops,sugarcrops,bioenergycrops,other_crops,crops_excluding_bioenergy_and_forage,kforestry,k_trade,k_notrade,time,t_all,processing20,past,past_all,past_soc,awms,awms_prp,awms_conf,pollutants_all,pollutants,n_pollutants_direct,land,kall_agg1,kall_agg2,npk,attributes,dm_ge_nr,report_it
 alcohol,default_sep18,biogas_dec18,biochar_jan19,kall,,,,,knpr,ksd,kst,,kfo,,,,,,,,,,,,k_trade,,,,,,,,,,,,,,,,,,,,
-begr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,k_trade,,,,,,,,,,,,,,,,,,,,
-betr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,k_trade,,,,,,,,,,,,,,,,,,,,
+begr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,,k_notrade,,,,,,,,,,,,,,,,,,,
+betr,default_sep18,biogas_dec18,biochar_jan19,kall,k,kcr,,kpr,,,,,,knf,,,,,,,bioenergycrops,,,,,k_notrade,,,,,,,,,,,,,,,,,,,
 biochar,,,biochar_jan19,kall,,,,,knpr,ksd,,,,knf,,,,,,,,,,,,k_notrade,,,,,,,,,,,,,,,,,,,
 biogas,,biogas_dec18,,kall,,,,kpr,,ksd,,,,knf,,,,,,,,,,,,k_notrade,,,,,,,,,,,,,,,,,,,
 brans,default_sep18,biogas_dec18,biochar_jan19,kall,,,,kpr,,ksd,kst,,kfo,,,kfeed,,,,,,,,,k_trade,,,,,,,,,,,,,,,,,,,,

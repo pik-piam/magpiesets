@@ -16,6 +16,15 @@
 \description{
 Package contains helper functions for reporting and validation (special focus on commodities)
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/pik-piam/magpiesets}
+  \item \doi{10.5281/zenodo.1158588}
+  \item Report bugs at \url{https://github.com/pik-piam/magpiesets/issues}
+}
+
+}
 \author{
 Benjamin Leon Bodirsky (Maintainer: \email{bodirsky@pik-potsdam.de}), Florian Humpenoeder, 
 Abhijeet Mishra, Kristine Karstens
