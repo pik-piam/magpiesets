@@ -43,7 +43,7 @@ addLocation <- function(x, fillMissing = NULL, naCellNumber = 0, format = "both"
     map67420 <- readRDS(system.file("extdata", "mapLPJcells2Coords.rds", package = "magpiesets"))
 
     x <- clean_magpie(x, what = "sets")
-    if (hasCoords(x)) {
+    if (hasCoords(x) && !.has67420(x)) {
 
         co <- getCoords(x)
         names(co) <- c("lon", "lat")
@@ -101,7 +101,6 @@ addLocation <- function(x, fillMissing = NULL, naCellNumber = 0, format = "both"
         getItems(x, dim = "x", maindim = 1)   <- gsub("(.*)\\.(.*)", "\\1", map67420$coords)
         getItems(x, dim = "y", maindim = 1)   <- gsub("(.*)\\.(.*)", "\\2", map67420$coords)
         getItems(x, dim = "iso", maindim = 1) <- map67420$iso
-        getSets(x)[1] <- "N"
 
         if (format != "both") {
             stop("The argument \"format\" is ignored for this input data format.")
