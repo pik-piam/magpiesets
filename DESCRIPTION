@@ -1,8 +1,8 @@
 Type: Package
 Package: magpiesets
 Title: MAgPIE sets for R
-Version: 0.45.7
-Date: 2024-06-04
+Version: 0.45.8
+Date: 2024-08-26
 Authors@R: c(
     person("Benjamin Leon", "Bodirsky", , "bodirsky@pik-potsdam.de", role = c("aut", "cre")),
     person("Florian", "Humpenoeder", , "humpenoeder@pik-potsdam.de", role = "aut"),
@@ -29,4 +29,4 @@ VignetteBuilder:
 Encoding: UTF-8
 LazyData: yes
 LazyLoad: yes
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
