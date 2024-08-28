@@ -43,7 +43,15 @@ addLocation <- function(x, fillMissing = NULL, naCellNumber = 0, format = "both"
     map67420 <- readRDS(system.file("extdata", "mapLPJcells2Coords.rds", package = "magpiesets"))
 
     x <- clean_magpie(x, what = "sets")
-    if (hasCoords(x)) {
+
+    if (hasCoords(x) && .has67420(x)) {
+
+        my_coords <- getItems(x, dim = 1)
+        indices <- match(my_coords, map67420$coords)
+        ordered_isos <- map67420$iso[indices]
+        getItems(x, dim = "country", maindim = 1) <-  ordered_isos
+
+    } else if (hasCoords(x)) {
 
         co <- getCoords(x)
         names(co) <- c("lon", "lat")

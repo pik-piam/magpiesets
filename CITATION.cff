@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
 title: 'magpiesets: MAgPIE sets for R'
-version: 0.45.7
-date-released: '2024-06-04'
+version: 0.46.0
+date-released: '2024-08-28'
 abstract: A library containing MAgPIE sets and other support functions.
 authors:
 - family-names: Bodirsky
@@ -31,7 +31,6 @@ authors:
   given-names: Jan Philipp
   email: dietrich@pik-potsdam.de
 license: LGPL-3.0
-keywords: ~
 repository-code: https://github.com/pik-piam/magpiesets
 doi: 10.5281/zenodo.1158588
 
