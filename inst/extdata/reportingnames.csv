@@ -77,7 +77,7 @@ crops_excluding_bioenergy_and_forage,Crops,#ffe733
 crop,Cropland,#ffe733
 past,Pastures and Rangelands,#cdff61
 forest,Forest,
-forestry,Managed Forest,
+forestry,Planted Forest,
 natrforest,Natural Forest,
 primforest,Primary Forest,
 secdforest,Secondary Forest,
