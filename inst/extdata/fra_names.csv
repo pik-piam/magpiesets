@@ -9,6 +9,10 @@ plantationForestIntroduced;Plantations Int;#92643a
 otherPlantedForest;Other Planted Forest;#f2f6ff
 introduced;Introduced Forest;#c9a86c
 primary;Primary Forest;#d9c835
+primaryForestBoreal;Primary Forest Boreal;#c8d435
+primaryForestTemperate;Primary Forest Temperate;#b8ce35
+primaryForestSubTropical;Primary Forest SubTropical;#a8c835
+primaryForestTropical;Primary Forest Tropical;#98c235
 tempUnstocked;Unstocked;#ed2df0
 bamboos;Bamboos;#e2dfe3
 mangroves;Mangroves;#aac3f7

@@ -1,6 +1,6 @@
 # MAgPIE sets for R
 
-R package **magpiesets**, version **0.47.1**
+R package **magpiesets**, version **0.47.2**
 
 [![CRAN status](https://www.r-pkg.org/badges/version/magpiesets)](https://cran.r-project.org/package=magpiesets) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1158588.svg)](https://doi.org/10.5281/zenodo.1158588) [![R build status](https://github.com/pik-piam/magpiesets/workflows/check/badge.svg)](https://github.com/pik-piam/magpiesets/actions) [![codecov](https://codecov.io/gh/pik-piam/magpiesets/branch/master/graph/badge.svg)](https://app.codecov.io/gh/pik-piam/magpiesets) [![r-universe](https://pik-piam.r-universe.dev/badges/magpiesets)](https://pik-piam.r-universe.dev/builds)
 
@@ -46,7 +46,7 @@ In case of questions / problems please contact Benjamin Leon Bodirsky <bodirsky@
 
 To cite package **magpiesets** in publications use:
 
-Bodirsky B, Humpenoeder F, Mishra A, Karstens K, Weindl I, Molina Bacca E, von Jeetze P, Dietrich J (2026). "magpiesets: MAgPIE sets for R." doi:10.5281/zenodo.1158588 <https://doi.org/10.5281/zenodo.1158588>, Version: 0.47.1, <https://github.com/pik-piam/magpiesets>.
+Bodirsky B, Humpenoeder F, Mishra A, Karstens K, Weindl I, Molina Bacca E, von Jeetze P, Dietrich J (2026). "magpiesets: MAgPIE sets for R." doi:10.5281/zenodo.1158588 <https://doi.org/10.5281/zenodo.1158588>, Version: 0.47.2, <https://github.com/pik-piam/magpiesets>.
 
 A BibTeX entry for LaTeX users is
 
@@ -58,6 +58,6 @@ A BibTeX entry for LaTeX users is
   date = {2026-03-14},
   year = {2026},
   url = {https://github.com/pik-piam/magpiesets},
-  note = {Version: 0.47.1},
+  note = {Version: 0.47.2},
 }
 ```
