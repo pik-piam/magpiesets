@@ -36,3 +36,5 @@ prod;Production;#b56800
 prot;Protection;#eaff3b
 biodiv;Biodoversity;#dfff00
 socserv;Soil Conservation;#d0ee00
+gs_total_primary;GS Total Primary Forest;#d9c835
+gs_total_introduced;GS Total Introduced Forest;#c9a86c
