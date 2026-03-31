@@ -1,8 +1,8 @@
 Type: Package
 Package: magpiesets
 Title: MAgPIE sets for R
-Version: 0.47.3
-Date: 2026-03-14
+Version: 0.48.0
+Date: 2026-03-31
 Authors@R: c(
     person("Benjamin Leon", "Bodirsky", , "bodirsky@pik-potsdam.de", role = c("aut", "cre")),
     person("Florian", "Humpenoeder", , "humpenoeder@pik-potsdam.de", role = "aut"),
@@ -30,3 +30,4 @@ Encoding: UTF-8
 LazyData: yes
 LazyLoad: yes
 RoxygenNote: 7.3.3
+Config/Needs/website: tidyverse/tidytemplate
