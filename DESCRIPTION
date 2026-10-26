@@ -1,13 +1,14 @@
 Type: Package
 Package: magpiesets
 Title: MAgPIE sets for R
-Version: 0.48.0
-Date: 2026-03-31
+Version: 0.49.0
+Date: 2026-09-22
 Authors@R: c(
     person("Benjamin Leon", "Bodirsky", , "bodirsky@pik-potsdam.de", role = c("aut", "cre")),
     person("Florian", "Humpenoeder", , "humpenoeder@pik-potsdam.de", role = "aut"),
     person("Abhijeet", "Mishra", , "mishra@pik-potsdam.de", role = "aut"),
     person("Kristine", "Karstens", , "karstens@pik-potsdam.de", role = "aut"),
+    person("Michael", "Crawford", , "crawford@pik-potsdam.de", role = "aut"),
     person("Isabelle", "Weindl", , "weindl@pik-potsdam.de", role = "aut"),
     person("Edna", "Molina Bacca", , "mbacca@pik-potsdam.de", role = "aut"),
     person("Patrick", "von Jeetze", , "vjeetze@pik-potsdam.de", role = "aut"),
@@ -29,5 +30,5 @@ VignetteBuilder:
 Encoding: UTF-8
 LazyData: yes
 LazyLoad: yes
-RoxygenNote: 7.3.3
 Config/Needs/website: tidyverse/tidytemplate
+Config/roxygen2/version: 8.1.0

@@ -9,18 +9,22 @@ export(reportingReverse)
 export(reportingnames)
 export(summationhelper)
 import(magclass)
-importFrom(magclass,add_dimension)
-importFrom(magclass,clean_magpie)
-importFrom(magclass,dimCode)
-importFrom(magclass,dimExists)
-importFrom(magclass,getCells)
-importFrom(magclass,getCoords)
-importFrom(magclass,getItems)
-importFrom(magclass,getNames)
-importFrom(magclass,getSets)
-importFrom(magclass,hasCoords)
-importFrom(magclass,mbind)
-importFrom(magclass,ncells)
-importFrom(magclass,ndim)
-importFrom(utils,read.csv)
-importFrom(utils,tail)
+importFrom(magclass,
+  add_dimension,
+  clean_magpie,
+  dimCode,
+  dimExists,
+  getCells,
+  getCoords,
+  getItems,
+  getNames,
+  getSets,
+  hasCoords,
+  mbind,
+  ncells,
+  ndim
+)
+importFrom(utils,
+  read.csv,
+  tail
+)

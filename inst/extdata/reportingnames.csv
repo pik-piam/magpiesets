@@ -13,19 +13,23 @@ fibres,Cotton lint,#e2dfe3
 fish,Fish,#aac3f7
 foddr,Forage,#399700
 groundnut,Groundnuts,#ecc774
+hard_commodities,Hard Commodities,
 livst_chick,Poultry meat,#ffddc9
 livst_egg,Eggs,#e7d8cf
 livst_milk,Dairy,#fafaed
 livst_pig,Pig meat,#ffa396
 livst_rum,Ruminant meat,#ec472f
+logging,Logging,
 maiz,Maize,#ffc300
 manure,Manure,
 molasses,Molasses,#521e00
 oils,Oils,#fff3a9
 oilcakes,Oilcakes,#d5be66
 oilpalm,Oilpalms,#3b8429
+other_natural_disturbances,Other Natural Disturbances,
 others,Fruits Vegetables Nuts,#9fd134
 pasture,Pasture,#cdff61
+permanent_agriculture,Permanent Agriculture,
 potato,Potatoes,#b66913
 puls_pro,Pulses,#b56800
 rapeseed,Other oil crops incl rapeseed,#eaff3b
@@ -35,6 +39,8 @@ res_nonfibrous,Non fibrous crop residues,#c2de00
 res_nouse,Residues with no double use,
 rice_pro,Rice,#ead78d
 scp,Microbial protein,#5ae3d0
+settlements_infrastructure,Settlements and Infrastructure,
+shifting_cultivation,Shifting Cultivation,
 soybean,Soybean,#f8efb8
 sugar,Sugar,#f8f8f8
 sugr_beet,Sugar beet,#e0e0e0
@@ -43,6 +49,8 @@ sunflower,Sunflower,#eae300
 tece,Temperate cereals,#ffe733
 trce,Tropical cereals,#f6e778
 timber,Roundwood,#7b5a39
+unknown,Unknown,
+wildfire,Wildfire,
 wood,Industrial roundwood,#7b5a39
 woodfuel,Wood fuel,#b3b300
 constr_wood,Timber for construction,#b3b300
